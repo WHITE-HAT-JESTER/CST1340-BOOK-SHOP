@@ -42,15 +42,15 @@
                 <form class="modal-content" action="action_page.php" method="post">  <!--form for sign up. POST method used to send input data to the server-->
                     <div class ="container" >
                         <h2>Sign up</h2>
-                        <p>warning! Once you are in, you won't wanna come out. Please proceed with caution as you make your account.</p>
+                        <p>Warning! Once you are in, you won't wanna come out. Please proceed with caution as you make your account.</p>
                         <hr>
 
                         <label for="fname"><b>First name:</b></label>
-                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="text" id="fname" name="fname" required><br><br>
                         <label for="lname"><b>Last name:</b></label>
-                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="text" id="lname" name="lname" required><br><br>
                         <label for="email"><b>Email:</b></label>
-                        <input type="email" id="email" name="email"><br><br>
+                        <input type="email" id="email" name="email" required><br><br>
                         <label for="username"><b>Username:</b></label>
                         <input type="text" placeholder="insert your chosen alias" name="username" required max="25" min="6"><br><br>
                         <label for="password"><b>Password:</b></label>
@@ -61,6 +61,8 @@
                         <button type="button" onclick="document.getElementById('form02').style.display='block'" style="background-color:lightpink">Already have an account?</button><br><br>
                         <button type = "submit" onclick="document.getElementById('form01').style.display='none'" style="background-color:lightpink">Sign up</button>
                     </div><br><br>
+
+                    <!--"document.getElementById('form01')" initiates the form element and ".style.display='block'" visually shows the form popup and ".style.display='none'" hides it when the button is clicked and all conditions are met-->
 
                 </form>
             </div>
@@ -94,12 +96,21 @@
             
             <!--javascript code so the user can click  anywhere outside of the form to close it--> 
             <script>
-            // for the popup form (modal) to close when the user clicks outside of it
-            var modal = document.getElementById('id01');
+            // when we get the popup form (modal) 
+            var modal1 = document.getElementById('form01');
+            var modal2 = document.getElementById('form02');
             
+            // when the user clicks anywhere outside of the form
             window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+
+                //if it is the sign up form, close it
+                if (event.target == modal1) {
+                    modal2.style.display = "none";
+                }
+                
+                //if it is the login form, close it
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
                 }
             }
             </script>
