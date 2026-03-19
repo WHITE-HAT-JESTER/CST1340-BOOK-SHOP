@@ -11,10 +11,16 @@
     <!--link to css file-->
     <link rel="stylesheet" href="style.css">
     
-    <!--link to XML file-->
+    <!--link to XML file. which contains the data for the website-->
     <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="feed.xml">
 
-    <!--link to DTD file-->
+    <!--link to XSL file-->
+    <link rel="stylesheet" href="style.xsl">
+
+    <!--link to JavaScript file-->
+    <script src="script.js"></script>
+
+    <!--link to DTD-->
     <link rel="DTD" href="document.dtd">
 
 </head>
@@ -141,7 +147,7 @@
             <!--search bar-->
             <div class="search-container">
                 <form action="/search" method="get">
-                    <input type="text" placeholder="Search for books..." name="search">
+                    <input type="text" placeholder="Itching for something particular?" name="search">
                     <button type="submit">Search</button>
                 </form>
             </div>
@@ -151,19 +157,103 @@
    <hr>
     
    <main>
+        <h2>Welcome Dear Guilty Reader!</h2>
+        <xsl:for-each select ="books/book"><!--for each book element in the XML file, create a book card-->
+            <div class="bookcard-container"> <!--container for book cards-->
+
+                <!--book cover-->
+                <div class="book-cover">
+                    <img src="{cover}" alt="{title} cover" class="book-cover"><br>
+                    <!--use the cover element from the XML file as the source for the image and the title element as the alt text-->
+                    <!--reaction bar-->
+                    <div class="reactions">
+                        <button onclick="like-button">❤️</button>
+                        <button onclick="meh-button">⛔</button>
+                        <button onclick="notforme-button">💔</button>
+                    </div>
+                </div><br><br>
+
+                <!--book details-->
+                <div class="book-details">
+                    <h3>{title}</h3>
+                    <h4>by {author}</h4><br>
+                    <p>{price}</p><br>
+                    <p>{short-description}</p>
+                </div>
+
+                <!--buttons-->
+                <div class="book-buttons">
+                    <button onclick="addToCart()">Cart</button>
+                    <button onclick="addtoWishlist()">Wishlist</button>
+
+                    <!--full description button -->
+                    <button onclick="document.getElementById('full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
+                    
+                    <!--pop-up for full description-->
+                    <div id="full-description" class="modal">
+                        <span onclick="document.getElementById('full-description').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <form>
+                            <div class="container">
+                                <div class="book-cover">
+                                    <img src="{cover}" alt="{title} cover" class="book-cover"><br>
+                            
+                                    <div class="reactions">
+                                        <button onclick="like-button">❤️</button>
+                                        <button onclick="meh-button">⛔</button>
+                                        <button onclick="notforme-button">💔</button>
+                                    </div>
+                                </div><br><br>
+
+                                <div class="full-book-details">
+                                    <h2><b>{title}</b></h2>
+                                    <h4><b>by {author}</b></h4><br>
+                                    <h5>{rating}</h5><br>
+                                    <h5><b>{price}</b></h5><br><br>
+                                    <p>{full-description}</p><br><br><br>
+                                </div>
+                                
+                                <div class="book-buttons">
+                                    <button onclick="addToCart()">Cart</button>
+                                    <button onclick="addtoWishlist()">Wishlist</button>
+                                </div><br><br>
+
+                                <input type="text" placeholder="Penny for your thoughts..." name="review" max="16000"><br><br>
+                                <button type = "submit" onclick="document.getElementById('review').style.display='none'" style="background-color:lightpink" class="review">Share</button>
+                            </div><br><br>
+                        </form>
+                    </div>
+                    
+
+                    <script>
+                    // when we get the full description modal
+                    var modal= document.getElementById('full-description');
+            
+                    window.onclick = function(event) {
+
+                        //if it is the full decription, close it
+                        if (event.target == modal) {
+                            modal2.style.display = "none";
+                        }
+                        
+                    }
+                    </script>
+                </div>
+
+            </div>
+        </xsl:for-each>>
         
-   </main>
+   </main> 
    
    <footer>
    <div style= "background-color: rgb(248, 201, 208);">
    <h4> ABOUT US </h4>
         <p>Discover a world of literature and adventure with us. We offer a wide range of genres and authors to suit every taste. Whether you're into fantasies, tear jerkers, mysteries or facts over fiction, we have something for everyone!
-            Including an extensive collection of books for our book lovers and addicts, that help immerse you into the world the authors have created. </p>
+            An extensive collection of books for our book lovers and addicts, that help immerse you into the world the authors have created. </p>
        <br>
 
         <h4> CONTACT US </h4>
-        <h5><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></h5>
-        <p>Copyright © 2024 DEAR GUILTY READER. All rights reserved.</p>
+        <p><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></p>
+        <h5>Copyright © 2024 DEAR GUILTY READER. All rights reserved.</h5>
         </div>
    </footer>
 
