@@ -58,8 +58,18 @@
                         <label for="confirm_password"><b>Confirm Password:</b></label>
                         <input type="password" placeholder="confirm secret password" name="confirm_password" required max="17" min="8"><br><br>
                         
-                        <button type="button" onclick="document.getElementById('form02').style.display='block'" style="background-color:lightpink">Already have an account?</button><br><br>
-                        <button type = "submit" onclick="document.getElementById('form01').style.display='none'" style="background-color:lightpink">Sign up</button>
+                         <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+                        <br>
+                        <br>
+                        
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('form02').style.display='block'" style="background-color:lightpink">Already have an account?</button><br><br>
+                            <button type = "submit" onclick="document.getElementById('form01').style.display='none'" style="background-color:lightpink" class="signup">Sign up</button>
+                        </div>
                     </div><br><br>
 
                     <!--"document.getElementById('form01')" initiates the form element and ".style.display='block'" visually shows the form popup and ".style.display='none'" hides it when the button is clicked and all conditions are met-->
@@ -85,7 +95,7 @@
                         <label for="password"><b>Password:</b></label>
                         <input type="password" placeholder="insert secret password" name="password" required max="17" min="8"><br><br>
                         
-                        <button type = "submit" onclick="document.getElementById('form02').style.display='none'" style="background-color:lightpink">Login</button>
+                        <button type = "submit" onclick="document.getElementById('form02').style.display='none'" style="background-color:lightpink" class="login">Login</button>
                     </div><br><br>
 
                     <div class="container">
