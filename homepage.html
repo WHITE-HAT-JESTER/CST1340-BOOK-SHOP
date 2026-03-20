@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="style.css">
     
     <!--link to XML file. which contains the data for the website-->
-    <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="books.xml">
 
     <!--link to XSL file-->
-    <link rel="stylesheet" href="style.xsl">
+    <link rel="stylesheet" href="books.xsl">
 
     <!--link to JavaScript file-->
     <script src="script.js" async defer></script>
 
     <!--link to DTD-->
-    <link rel="DTD" href="document.dtd">
+    <link rel="DTD" href="books.dtd">
 
 </head>
 
@@ -186,8 +186,8 @@
 
                 <!--buttons-->
                 <div class="book-buttons">
-                    <button onclick="addToCart()">Cart</button>
-                    <button onclick="addtoWishlist()">Wishlist</button>
+                    <button onclick="addToCart()" style="background-color:lightpink" >Cart</button>
+                    <button onclick="addtoWishlist()" style="background-color:lightpink" >Wishlist</button>
 
                     <!--full description button -->
                     <button onclick="document.getElementById('full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
@@ -216,8 +216,8 @@
                                 </div>
                                 
                                 <div class="book-buttons">
-                                    <button onclick="addToCart()">Cart</button>
-                                    <button onclick="addtoWishlist()">Wishlist</button>
+                                    <button onclick="addToCart()" style="background-color:lightpink" >Cart</button>
+                                    <button onclick="addtoWishlist()" style="background-color:lightpink" >Wishlist</button>
                                 </div><br><br>
 
                                 <input type="text" placeholder="Penny for your thoughts..." name="review" width="auto" max="16000"><br><br>
