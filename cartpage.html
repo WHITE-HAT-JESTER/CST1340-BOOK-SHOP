@@ -1,0 +1,85 @@
+<!DOCTYPE html><!--declaration defining this doc-->
+
+<html lang = "en"><!--root element of the HTML document-->
+
+<head> <!--the behind the scenes crew that make the website functional-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEAR GUILTY READER</title>
+
+    <!--link to css file-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--link to XML file. which contains the data for the website-->
+    <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="feed.xml">
+
+    <!--link to XSL file-->
+    <link rel="stylesheet" href="style.xsl">
+
+    <!--link to JavaScript file-->
+    <script src="script.js" async defer></script>
+
+    <!--link to DTD-->
+    <link rel="DTD" href="document.dtd">
+
+</head>
+
+
+<body> <!--defines the body/structure of the website-->
+   <!--Home page for Dear Guilty Reader-->
+   <header>
+   <div style= "background-color: rgb(248, 201, 208);"></div>
+        <nav  class="navbar"><!--navigation bar-->
+        
+        <!--website logo-->
+        <div class="logo">
+            <img src="logo.png" alt="DEAR GUILTY READER logo" width="100" height="100">
+        </div>
+
+        <h1> DEAR GUILTY READER</h1>
+        <h3>Your next guilty pleasure awaits.</h3>
+
+        <ul>
+            <!--navigation links-->
+            <div class="navlinks">
+                <a href="homepage.html">Home</a>|
+                <a href="browsepage.html">Browse</a>|
+                <a href="cartpage.html">Cart</a>|
+                <a href="librarywishlist.html">Wishlist</a>
+            </div>
+        <ul>
+            
+            <!--search bar-->
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Itching for something particular?" name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+   </header>
+   <hr>
+
+   <main>
+
+    
+   </main>
+
+  <footer>
+   <div style= "background-color: rgb(248, 201, 208);">
+   <h4> ABOUT US </h4>
+        <p>Discover a world of literature and adventure with us. We offer a wide range of genres and authors to suit every taste. Whether you're into fantasies, tear jerkers, mysteries or facts over fiction, we have something for everyone!
+            An extensive collection of books for our book lovers and addicts, that help immerse you into the world the authors have created. </p>
+       <br>
+
+        <h4> CONTACT US </h4>
+        <p><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></p>
+        <h5>Copyright © 2024 DEAR GUILTY READER. All rights reserved.</h5>
+        </div>
+   </footer>
+
+</body>
+
+</html>
