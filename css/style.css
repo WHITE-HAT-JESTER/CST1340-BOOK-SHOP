@@ -20,7 +20,7 @@
 /*DECLARATION OF COLOURS FOR DARK MODE*/
 .darkmode{
     --bg_primary: #0B0F0B;
-    --bg_secondary: #313D31;
+    --bg_secondary: #242a24;
     --text_primary: #22FF88;
     --text_secondary:#7CFFB2;
     --text_tertiary:#3A5F45;
@@ -49,11 +49,11 @@ body{
 /* NAVIGATION BAR */
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-weight: bold;
     border: 0.2px solid var(--accent_glow);
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
 }
 
 .navbar li{
@@ -63,16 +63,16 @@ body{
 
 .nav-links{
     display: flex;
-    list-style-type: none;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
+    list-style-type: none;
     margin:0;
 }
 
 .nav-links a{
-    text-decoration: none;
     color: var(--text_primary);
     padding: 0px 10px 0px 10px;
+    text-decoration: none;
 }
 
 .nav-links li a{
@@ -84,28 +84,28 @@ body{
 }
 
 .nav-links li a:hover{
-    color: var(--bg_primary);
-    box-shadow: 0 0 6px var(--accent_glow);
-    background-color: var(--accent_primary);
     animation: blink 1s steps(1,start) infinite;
+    background-color: var(--accent_primary);
     border-radius: 2px;
+    box-shadow: 0 0 6px var(--accent_glow);
+    color: var(--bg_primary);
 }
 
 
 .dropdown{
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .dropdown_item {
-    display: none;
-    position: absolute;
+    backdrop-filter: blur(10px);
     background-color: rgba(var(--bg_secondary), 0.2);
     background-size: 100% auto;
-    backdrop-filter: blur(10px);
-    min-width: 150px;
-    border-radius: 2px;
     border: 0.2px solid var(--text_primary);
+    border-radius: 2px;
+    display: none;
+    min-width: 150px;
+    position: absolute;
 }
 
 .dropdown:hover .dropdown_item {
@@ -113,8 +113,8 @@ body{
 }
 .title_header{
     align-items: center;
-    display: flex;
     border: 0.2px solid var(--accent_glow);
+    display: flex;
 }
 
 .logo{
@@ -146,33 +146,34 @@ body{
 .nav-links li a:hover::after{
     content: "_";
 } */
-.navbar .theme_toggle{
+.navbar_buttons{
     display: flex;
-    align-items: center;
+    gap: 10px;
+    
 }
-
-
-#theme{
+button {
     position: relative;
-    height: 36px;
-    width: 50px;
+    height: 40px;
+    width: 64px;
     border-radius: 5px;
-
+    color: var(--text_primary);
     background-color: var(--bg_primary);
     border: 0.5px solid var(--accent_primary);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
+    text-transform: uppercase;
 }
 
-#theme:hover{
+button:hover{
     box-shadow: 0 0 6px var(--accent_glow);
     background-color: var(--accent_primary);
     animation: blink 1s steps(1,start) infinite;
-    height: 36px;
-    width: 50px;
+    height: 40px;
+    width: 64px;
+    color: var(--bg_primary);
+    text-transform: uppercase;
 }
 
 #theme svg{
@@ -193,7 +194,68 @@ body{
 .darkmode #theme svg:last-child{
     display: block;
 } 
-/* .main_header{
-    background-image: linear-gradient(var(--text_primary) 1px, transparent 1px), linear-gradient(90deg, var(--text_primary) 1px, transparent 1px);
-    background-size: 10px 10px;
-} */
+
+
+/* FORM STYLING */
+/* SIGN UP*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.modal button:hover{
+    animation: none;
+}
+.modal-content{
+    min-height: 75vh;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    background-color: var(--bg_secondary);
+}
+
+.close{
+    /* TODO: align close button to the right*/
+    cursor: pointer;
+}
+
+.password a{
+    color:#22FF88
+}
+/* FOOTER STYLING*/
+footer{
+    background-color: var(--bg_secondary);
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+table {
+    border: 1px solid var(--text_secondary);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+tr {
+    border: 1px solid var(--text_primary);
+}
+
+td {
+    color: var(--text_secondary)
+}
+footer > h1{
+    color: var(--text_secondary);
+}
+
+footer a:link{
+    color: var(--text_primary);
+}
+.copyright{
+    color: var(--text_tertiary);
+}

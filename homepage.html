@@ -18,8 +18,7 @@
     <!--link to XSL file-->
     <link rel="stylesheet" href="books.xsl">
 
-    <!--link to JavaScript file-->
-    <script src="js/script.js" defer></script>
+    
 
     <!--link to DTD-->
     <link rel="DTD" href="books.dtd">
@@ -53,7 +52,74 @@
                     <li><a href="cartpage.html">Cart</a></li>
                     <li><a href="librarywishlist.html">Wishlist</a></li>
             </ul>
-            <div class = "theme_toggle">
+            <div class = "navbar_buttons">
+            <button id="log_in">Log In</button>
+                <div id="login" class="login">
+                    <!--pop-up form for login-->
+                    <div id="loginform" class="modal">
+                        <span  id="closeLogin" class="close" title="Close Modal">X</span>
+                        <form class="modal-content">
+                            <div class="container">
+                                <h2>Login</h2>
+                                <p>Welcome back! Please enter your details to log in to your account.</p>
+                                <hr>
+
+                                <label for="login_username"><b>Username:</b></label>
+                                <input type="text" id = "login_username" placeholder="insert alias" name="username" required maxlength="25" minlength="6"><br><br>
+                                <label for="login_password"><b>Password:</b></label>
+                                <input type="password" id = "login_password" placeholder="insert secret password" name="password" required maxlength="17" minlength="8"><br><br>
+                                
+                                <button type = "submit" id = "submit_login" class="login">Login</button>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="container">
+                                <span class="password"><a href="#">Forgot password?</a></span> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <button id="sign_up">Sign Up</button>
+                <div id="signupform" class="modal">
+                <span id="closeSignup" class="close" title="Close Modal">X</span>
+                    <form class="modal-content">  <!--form for sign up-->
+                        <div class ="container" >
+                            <h2>Sign up</h2>
+                            <p>Warning! Once you are in, you won't wanna come out. Please proceed with caution as you make your account.</p>
+                            <hr>
+                            <label for="fname"><b>First name:</b></label>
+                            <input type="text" id="fname" name="fname" required><br><br>
+                            <label for="lname"><b>Last name:</b></label>
+                            <input type="text" id="lname" name="lname" required><br><br>
+                            <label for="email"><b>Email:</b></label>
+                            <input type="email" id="email" name="email" required><br><br>
+                            <label for="username"><b>Username:</b></label>
+                            <input type="text" id="username" placeholder="insert your chosen alias" name="username" required maxlength="25" minlength="6"><br><br>
+                            <label for="password"><b>Password:</b></label>
+                            <input type="password" id="password" placeholder="insert secret password" name="password" required maxlength="17" minlength="8"><br><br>
+                            <label for="confirm_password"><b>Confirm Password:</b></label>
+                            <input type="password" id="confirm_password" placeholder ="confirm secret password" name="confirm_password" required maxlength="17" minlength="8"><br><br>
+                            
+                            <label>
+                                <input type="checkbox" checked="unchecked" name="remember"> Remember me
+                            </label>
+                            <p>By creating an account you agree to our Terms & Conditions.</p>
+                            <br>
+                            <br>
+                            
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('loginform').style.display='block'">Already have an account?</button><br><br>
+                                <button type = "submit" id = "submit_signup">Sign up</button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                    <!--"document.getElementById('signupform')" initiates the form element and ".style.display='block'" visually shows the form popup and ".style.display='none'" hides it when the button is clicked and all conditions are met-->
+                    </form>
+                </div>
+            </div>
                 <button id="theme">
                 <!--moon icon - dark mode-->
                 <svg version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -80,85 +146,6 @@
 
         
         </div>
-        
-            
-            <div id="signup" class="signup">
-            <!--submit button-->  
-            <!--"<button onclick = "myfunction()"> click </button>" is used when one wants to execute a function when a button is clicked -->
-            <button onclick="document.getElementById('signupform').style.display='block'" style="width:auto;">Sign up</button>
-
-            <!--pop-up (modal) form for signup-->
-            <div id="signupform" class="modal">
-                <!--span element used to create a close button for the pop-up form-->
-                <span onclick="document.getElementById('signupform').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-                <form class="modal-content">  <!--form for sign up-->
-                    <div class ="container" >
-                        <h2>Sign up</h2>
-                        <p>Warning! Once you are in, you won't wanna come out. Please proceed with caution as you make your account.</p>
-                        <hr>
-
-                        <label for="fname"><b>First name:</b></label>
-                        <input type="text" id="fname" name="fname" required><br><br>
-                        <label for="lname"><b>Last name:</b></label>
-                        <input type="text" id="lname" name="lname" required><br><br>
-                        <label for="email"><b>Email:</b></label>
-                        <input type="email" id="email" name="email" required><br><br>
-                        <label for="username"><b>Username:</b></label>
-                        <input type="text" id="username" placeholder="insert your chosen alias" name="username" required maxlength="25" minlength="6"><br><br>
-                        <label for="password"><b>Password:</b></label>
-                        <input type="password" id="password" placeholder="insert secret password" name="password" required maxlength="17" minlength="8"><br><br>
-                        <label for="confirm_password"><b>Confirm Password:</b></label>
-                        <input type="password" id="confirm_password" placeholder ="confirm secret password" name="confirm_password" required maxlength="17" minlength="8"><br><br>
-                        
-                         <label>
-                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                            </label>
-
-                        <p>By creating an account you agree to our Terms & Conditions.</p>
-                        <br>
-                        <br>
-                        
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('loginform').style.display='block'" style="background-color:lightpink">Already have an account?</button><br><br>
-                            <button type = "submit" onclick="document.getElementById('signupform').style.display='none'" style="background-color:lightpink" class="signup">Sign up</button>
-                        </div>
-                    </div><br><br>
-
-                    <!--"document.getElementById('signupform')" initiates the form element and ".style.display='block'" visually shows the form popup and ".style.display='none'" hides it when the button is clicked and all conditions are met-->
-
-                </form>
-            </div>
-            </div>
-
-            <div id="login" class="login">
-            <!--Login form button -->
-            <button onclick="document.getElementById('loginform').style.display='block'" style="width:auto;">Login</button>
-            
-            <!--pop-up form for login-->
-            <div id="loginform" class="modal">
-                <span onclick="document.getElementById('loginform').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <form>
-                    <div class="container">
-                        <h2>Login</h2>
-                        <p>Welcome back! Please enter your details to log in to your account.</p>
-                        <hr>
-
-                        <label for="login_username"><b>Username:</b></label>
-                        <input type="text" id = "login_username" placeholder="insert alias" name="username" required maxlength="25" minlength="6"><br><br>
-                        <label for="login_password"><b>Password:</b></label>
-                        <input type="login_password" id = "login_password" placeholder="insert secret password" name="password" required maxlength="17" minlength="8"><br><br>
-                        
-                        <button type = "submit" onclick="document.getElementById('loginform').style.display='none'" style="background-color:lightpink" class="login">Login</button>
-                    </div><br><br>
-
-                    <div class="container">
-                        <span class="password"><a href="#">Forgot password?</a></span> 
-                    </div>
-                </form>
-            </div>
-            </div>
-
             <!--javascript code so the user can click  anywhere outside of the form to close it--> 
             <script>
             // when we get the popup form (modal) 
@@ -263,20 +250,52 @@
 
             </div>
         </xsl:for-each>>
-        
+    <!--link to JavaScript file-->
+    <script src="js/script.js" defer></script>
    </main> 
    
    <footer>
-   <div style= "background-color: rgb(248, 201, 208);">
-   <h4> ABOUT US </h4>
-        <p>Discover a world of literature and adventure with us. We offer a wide range of genres and authors to suit every taste. Whether you're into fantasies, tear jerkers, mysteries or facts over fiction, we have something for everyone!
-            An extensive collection of books for our book lovers and addicts, that help immerse you into the world the authors have created. </p>
-       <br>
-
-        <h4> CONTACT US </h4>
-        <p><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></p>
-        <h5>Copyright © 2024 DEAR GUILTY READER. All rights reserved.</h5>
-        </div>
+        <br>
+        <h1>OPENING HOURS</h1>
+        <table >
+            <tr>
+                <td>MONDAY</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>FRIDAY</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>SATURDAY</td>
+                <td>11:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>SUNDAY</td>
+                <td>11:00 - 15:00</td>
+            </tr>
+        </table>
+        <p> Closed on <em> public holidays.</em></p>
+        <br>
+        <h1>ABOUT US</h1>
+            <p>Discover a world of literature and adventure with us. We offer a wide range of genres and authors to suit every taste. Whether you're into fantasies, tear jerkers, mysteries or facts over fiction, we have something for everyone!
+                An extensive collection of books for our book lovers and addicts, that help immerse you into the world the authors have created. </p>
+        <br>
+        <h1>CONTACT US</h1>
+            <p><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></p>
+            <p class="copyright">Copyright © 2026 DEAR GUILTY READER. All rights reserved.</p>
    </footer>
 
 </body>
