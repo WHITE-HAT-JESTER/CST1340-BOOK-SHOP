@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookshop SYSTEM "books.dtd">
+<bookshop>
+    <category name="scifi">
+        <book >
+            <title>The Hunger Games</title>
+            <author>
+                <firstname>Suzanne</firstname> 
+                <lastname>Collins</lastname>
+            </author>
+            <ISBN>9780439023481 </ISBN>
+            <price>16.50</price>
+            <year>2008</year>
+        </book>
+
+        <book>
+            <title>Dune</title>
+            <author>
+                <firstname>Frank</firstname>
+                <lastname>Herbert</lastname>
+            </author> 
+            <ISBN>9780441172719</ISBN>
+            <price>25.20</price>
+            <year>1965</year>
+        </book> 
+
+         <book>
+            <title>Neuromancer</title>
+            <author>
+                <firstname>William</firstname>
+                <lastname>Gibson</lastname>
+            </author> 
+            <ISBN>9780441569595</ISBN>
+            <price>21.00</price>
+            <year>1984</year>
+        </book> 
+    </category>
+
+    <category name="children">  
+        <book>
+            <title>The Gruffalo</title>
+            <author>
+                <firstname>Julia</firstname> 
+                <lastname>Donaldson</lastname>
+            </author>
+            <ISBN>9780142403877 </ISBN>
+            <price>10.20</price>
+            <year>2000</year>
+        </book>
+
+         <book>
+            <title>Olivia</title>
+            <author>
+                <firstname>Ian</firstname> 
+                <lastname>Falconer</lastname>
+            </author>
+            <ISBN>9780688168583</ISBN>
+            <price>12.00</price>
+            <year>2000</year>
+        </book>
+
+        </category>
+
+    <category name="mystery">
+        <book>
+            <title>Gone Girl</title>
+            <author>
+                <firstname>Gillian</firstname> 
+                <lastname>Flynn</lastname>
+            </author>
+            <ISBN>9780307588364</ISBN>
+            <price>12.10</price>
+            <year>2012</year>
+        </book>
+
+        <book >
+            <title>My Husbands Wifi</title>
+            <author>
+                <firstname>Alice</firstname> 
+                <lastname>Feeney</lastname>
+            </author>
+            <ISBN>9781538753952</ISBN>
+            <price>14.10</price>
+            <year>2026</year>
+        </book>
+    </category>
+
+    <catergory name="thriller">
+        <book>
+            <title>The Silence of the Lambs</title>
+            <author>
+                <firstname>Thomase</firstname> 
+                <lastname>Harris</lastname>
+            </author>
+            <ISBN>9781982137274</ISBN>
+            <price>14.25</price>
+            <year>1998</year>
+        </book>
+
+        <book>
+            <title>The Survivor</title>
+            <author>
+                <firstname>Andrew</firstname> 
+                <lastname>Raid</lastname>
+            </author>
+            <ISBN></ISBN>
+            <price>14.25</price>
+            <year>2026</year>
+        </book>
+    </category>
+
+    <category name="fanatasy">
+        <book> 
+            <title>The Night Circus</title>
+            <author>
+                <firstname>Erin</firstname> 
+                <lastname>Morgenstern</lastname>
+            </author>
+            <ISBN>9780618743514</ISBN>
+            <price>12.50</price>
+            <year>2011</year>
+        </book>
+
+         <book> 
+            <title>Alices Adventure in Wonderland</title>
+            <author>
+                <firstname>Lewis</firstname> 
+                <lastname>Carroll</lastname>
+            </author>
+            <ISBN>9781603190241</ISBN>
+            <price>10.50</price>
+            <year>1865</year>
+        </book>
+    </category>
+
+    <category name="romance">
+        <book>
+            <title>The Fault in Our Stars</title>
+            <author>
+                <firstname>John</firstname> 
+                <lastname>Green</lastname>
+            </author>
+            <price>15.10</price>
+            <year>2012</year>
+        </book>
+
+        <book> 
+            <title>The Hating Game</title>
+            <author>
+                <firstname>Sally</firstname> 
+                <lastname>Thorne</lastname>
+            </author>
+            <ISBN>9781713566511</ISBN>
+            <price>15.55</price>
+            <year>2016</year>
+        </book>
+    <category>
+
+    <category name="non-fiction">
+        <book>
+            <title>The Power of Habit</title>
+            <author>
+                <firstname>Charles</firstname> 
+                <lastname>Duhigg</lastname>
+            </author>
+            <author>Charles Duhigg</author>
+            <price>14.25</price>
+            <year>2012</year>
+        </book>
+
+        <book> 
+            <title>The Diary of a Young Girl</title>
+            <author>
+                <firstname>Anne</firstname> 
+                <lastname>Frank</lastname>
+            </author>
+            <ISBN>9780140366286</ISBN>
+            <price>25.20</price>
+            <year>1947</year>
+        </book>
+    </category>
+</bookshop>
