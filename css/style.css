@@ -1,16 +1,14 @@
-
-
-/* colours */
+/* THEME DECLARATION */
 
 /* DECLARATION OF COLOURS FOR LIGHT MODE*/
 :root{
     --bg_primary: #F5E6C8;
-    --bg_secondary: #E8D8B5;
+    --bg_secondary: #e0d1b4;
     --text_primary: #2B2B2B;
     --text_secondary:#5A5A5A;
     --text_tertiary:#8A7F6B;
-    --accent_primary:#b93939;
-    --accent_glow:#9a5c5c;
+    --accent_primary:#c94d4d;
+    --accent_glow:#be5f5f;
     --active:#1F5C2E;
     --custom_red:#C44536;
     --custom_yellow: #FFD166;
@@ -19,13 +17,13 @@
 
 /*DECLARATION OF COLOURS FOR DARK MODE*/
 .darkmode{
-    --bg_primary: #0B0F0B;
-    --bg_secondary: #242a24;
-    --text_primary: #22FF88;
-    --text_secondary:#7CFFB2;
-    --text_tertiary:#3A5F45;
-    --accent_primary:#33FF88;
-    --accent_glow:#66FFAA;
+    --bg_primary: #232E3F;
+    --bg_secondary: #1B263B;
+    --text_primary: #F5E6C8;
+    --text_secondary:#DAD5C6;
+    --text_tertiary:#6f6f6f;
+    --accent_primary:#e680ba;
+    --accent_glow:#f39ece;
     --active:#B6FFD6;
     --custom_red:#FF3B3B;
     --custom_yellow: #FFD166;
@@ -33,17 +31,38 @@
 
 *{
     margin: 2px 2px 2px 2px;
+    font-family: 'JetBrains Mono', monospace;
 }
 body{
-    background-color: var(--bg_primary);
+    background-color: var(--bg_secondary);
     color: var(--text_primary);
     font-family: 'JetBrains Mono', monospace;
 }
 
 /* KEYFRAMES FOR GENERAL BLINK ANIMATION*/
 @keyframes blink{
-    0%, 100% {opacity: 1;} 
-    50% {opacity: 0;}
+    50% {opacity: 1;} 
+    0%, 100% {opacity: 0;}
+}
+
+/*KEYFRAMES FOR TYPING ANIMATION*/
+@keyframes typing{
+    from {width:0} to {width:40ch; border-right: none;};
+}
+
+@keyframes slogan{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
 }
 
 /* NAVIGATION BAR */
@@ -54,10 +73,12 @@ body{
     display: flex;
     font-weight: bold;
     justify-content: space-between;
+    background-color: var(--bg_primary);
+    border: 2px solid var(--text_primary);
+    border-radius: 10px;
 }
 
 .navbar li{
-    font-family: 'JetBrains Mono', monospace;
     text-transform: uppercase;
 }
 
@@ -66,7 +87,6 @@ body{
     gap: 20px;
     justify-content: center;
     list-style-type: none;
-    margin:0;
 }
 
 .nav-links a{
@@ -81,20 +101,26 @@ body{
 
 .nav-links li a::before{
     content: "> ";
+    opacity: 0;
+}
+.nav-links li a:hover::before{
+    opacity: 1;
 }
 
 .nav-links li a:hover{
-    animation: blink 1s steps(1,start) infinite;
     background-color: var(--accent_primary);
-    border-radius: 2px;
+    margin:0;
+    transform: scale(1.15);
     box-shadow: 0 0 6px var(--accent_glow);
-    color: var(--bg_primary);
+    color: var(--bg_secondary);
+    transition: all 0.2s ease-in-out;
 }
 
 
 .dropdown{
     display: inline-block;
     position: relative;
+    z-index: 1000;
 }
 
 .dropdown_item {
@@ -111,15 +137,11 @@ body{
 .dropdown:hover .dropdown_item {
     display: block;
 }
-.title_header{
-    align-items: center;
-    border: 0.2px solid var(--accent_glow);
-    display: flex;
-}
+
 
 .logo{
-    height: 200px;
-    flex: 0 0 15%;
+    height: 32px;
+    padding: 0 0 0 10px;
     display: flex;
     justify-content: center;
 }
@@ -128,13 +150,27 @@ body{
 }
 
 .main_header {
+    background-color: var(--bg_primary);
+    border: 2px solid var(--text_primary);
+    border-radius: 10px;
     flex: 0 0 85%;
     flex-direction: column;
     display: flex;
     justify-content: center;
 }
+
+.main_header h1{
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 5px solid var(--text_primary);
+    white-space: nowrap;
+    animation: typing 2.8s steps(30, end) forwards;
+}
+
 .main_header h2{
     color: var(--accent_primary);
+    animation: slogan 2s steps(1, end);
 }
 .main_header h2::after{
     content:"_";
@@ -148,17 +184,17 @@ body{
 } */
 .navbar_buttons{
     display: flex;
-    gap: 10px;
     
 }
 button {
+    margin-right: 10px;
     position: relative;
-    height: 40px;
-    width: 64px;
-    border-radius: 5px;
-    color: var(--text_primary);
-    background-color: var(--bg_primary);
-    border: 0.5px solid var(--accent_primary);
+    height: 44px;
+    width: 70px;
+    border-radius: 10px;
+    color: var(--bg_primary);
+    background-color: var(--accent_primary);
+    border: 2px solid var(--accent_primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,16 +204,20 @@ button {
 
 button:hover{
     box-shadow: 0 0 6px var(--accent_glow);
+    border: none;
     background-color: var(--accent_primary);
+    display: flex;
     animation: blink 1s steps(1,start) infinite;
-    height: 40px;
-    width: 64px;
+    height: 44px;
+    border-radius: 10px;
+    width: 70px;
     color: var(--bg_primary);
+    justify-content: center;
     text-transform: uppercase;
 }
 
 #theme svg{
-    fill: var(--text_primary);
+    fill: var(--bg_primary);
 }
 
 #theme svg:hover{
@@ -224,31 +264,66 @@ button:hover{
 }
 
 .password a{
-    color:#22FF88
+    color:var(--accent_primary);
+}
+
+.custom-divider{
+    height:5px;
+    background-color: var(--accent_primary);
+    border: 1px solid var(--text_primary);
+    border-radius: 10px;
 }
 /* FOOTER STYLING*/
 footer{
-    background-color: var(--bg_secondary);
+    background-color: var(--bg_primary);
     text-align: center;
     padding: 20px 0 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
+/* styling to separate footer into 2 separate columns*/
+footer .left{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+footer .right{
+    text-align: center;
+    float:right;
+    width: 50%;
+}
 table {
     border: 1px solid var(--text_secondary);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    width: 25%;
+    width: 75%;
 }
 
 tr {
     border: 1px solid var(--text_primary);
 }
 
+tr:hover{
+    background-color:var(--accent_primary);
+    transform: scale(1.1);
+    color: var(--bg_secondary);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 6px var(--accent_glow);
+}
+
+tr:hover td{
+    color:var(--bg_secondary);
+}
+
 td {
     color: var(--text_secondary)
 }
+
 footer > h1{
     color: var(--text_secondary);
 }
