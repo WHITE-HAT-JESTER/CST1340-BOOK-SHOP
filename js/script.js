@@ -66,31 +66,21 @@ submit_log_in.addEventListener("click", () => {
 })
 
 
-// AFTER MODEL
-// when we get the full description modal
-const bookcards= function (){document.getElementsByClassName('bookcard-container');
-       
-    for (let i = 0; i < bookcards.length; i++) {
-            
-        bookcards[i].addEventListener("hover", () => {
-                document.getElementById('full-description').style.display = "block";
+    // AFTER MODEL
+    // hover-to-reveal full description for each book card
+    const bookcards = document.querySelectorAll('.bookcard-container');
 
-                 window.onclick = function(event) {
+    bookcards.forEach(card => {
+        const fullDescription = card.querySelector('.full-description');
+        if (!fullDescription) return;
 
-                //if it is the full decription, close it
-                if (event.target == book) {
-                    book.style.display = "none";
-                    }
+        card.addEventListener('mouseenter', () => {
+            fullDescription.style.display = 'block';
+        });
 
-            }
-            })
-
-           
-        }
-
-        return bookcards;
-};
-
-document.getElementById('bookcard-container')= bookcards();
+        card.addEventListener('mouseleave', () => {
+            fullDescription.style.display = 'none';
+        });
+    });
 
 

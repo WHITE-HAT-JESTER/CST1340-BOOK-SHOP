@@ -184,7 +184,7 @@
                     <!--reaction bar-->
                     <div class="reactions">
                         <button onclick="like-button">❤️</button>
-                        <button onclick="meh-button">⛔</button>
+                        <button onclick="meh-button">➖</button>
                         <button onclick="notforme-button">💔</button>
                     </div>
                 </div><br><br>
@@ -203,11 +203,11 @@
                     <button onclick="addtoWishlist()" style="background-color:lightpink" >Wishlist</button>
 
                     <!--full description button -->
-                    <button onclick="document.getElementById('full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
+                    <button onclick="this.closest('.bookcard-container').querySelector('.full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
                     
                     <!--pop-up for full description-->
-                    <div id="full-description" class="modal">
-                        <span onclick="document.getElementById('full-description').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <div class="full-description modal">
+                        <span onclick="this.closest('.full-description').style.display='none'" class="close" title="Close Modal">&times;</span>
                         <form>
                             <div class="container">
                                 <div class="book-cover">
@@ -215,7 +215,7 @@
                             
                                     <div class="reactions">
                                         <button onclick="like-button">❤️</button>
-                                        <button onclick="meh-button">⛔</button>
+                                        <button onclick="meh-button">➖</button>
                                         <button onclick="notforme-button">💔</button>
                                     </div>
                                 </div><br><br>
@@ -294,7 +294,7 @@
 
         <div class="right">
             <h1>CONTACT US</h1>
-            <p><a href="mailto:hnabbosa101@gmail.com">hnabbosa101@gmail.com</a></p>
+            <p><a href="mailto:dearguiltyreader@gmail.com">dearguiltyreader@gmail.com</a></p>
             <p class="copyright">Copyright © 2026 DEAR GUILTY READER. All rights reserved.</p>
         </div>
         

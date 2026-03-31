@@ -40,6 +40,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </table>
 
 <a href="homepage.html">Back to Home</a>
+<a href="browsepage.html">Browse by Category</a>
+<a href="librarywishlist.html">View Wishlist</a>
+<a href="cartpage.html">View Cart</a>
 
 </body>
 </html>
