@@ -23,11 +23,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <th>Year</th>
 </tr>
 
-<xsl:for-each select="bookshop/book">
+<xsl:for-each select="bookshop/category/book">
 <tr>
     <td><xsl:value-of select="title"/></td>
-    <td><xsl:value-of select="author"/></td>
-    <td><xsl:value-of select="@category"/></td>
+    <td>
+        <xsl:value-of select="author/firstname"/>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="author/lastname"/>
+    </td>
+    <td><xsl:value-of select="parent::category/@name"/></td>
     <td><xsl:value-of select="price"/></td>
     <td><xsl:value-of select="year"/></td>
 </tr>
@@ -35,7 +39,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 </table>
 
-<br>
 <a href="homepage.html">Back to Home</a>
 
 </body>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookshop SYSTEM "books.dtd">
+<?xml-stylesheet type="text/xsl" href="XSL.xsl"?>
+<!DOCTYPE bookshop SYSTEM "DTD.dtd">
 <bookshop>
     <category name="scifi">
         <book >
@@ -85,7 +86,7 @@
         </book>
     </category>
 
-    <catergory name="thriller">
+    <category name="thriller">
         <book>
             <title>The Silence of the Lambs</title>
             <author>
@@ -109,7 +110,7 @@
         </book>
     </category>
 
-    <category name="fanatasy">
+    <category name="fantasy">
         <book> 
             <title>The Night Circus</title>
             <author>
@@ -122,7 +123,7 @@
         </book>
 
          <book> 
-            <title>Alices Adventure in Wonderland</title>
+            <title>Alice's Adventure in Wonderland</title>
             <author>
                 <firstname>Lewis</firstname> 
                 <lastname>Carroll</lastname>
@@ -154,7 +155,7 @@
             <price>15.55</price>
             <year>2016</year>
         </book>
-    <category>
+    </category>
 
     <category name="non-fiction">
         <book>

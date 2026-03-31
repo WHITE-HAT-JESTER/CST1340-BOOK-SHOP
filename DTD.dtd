@@ -1,9 +1,14 @@
-<!ELEMENT bookshop (book+)>
+<!ELEMENT bookshop (category+)>
 
-<!ELEMENT book (title, author, price, year)>
-<!ATTLIST book category CDATA #REQUIRED>
+<!ELEMENT category (book+)>
+<!ATTLIST category name CDATA #REQUIRED>
+
+<!ELEMENT book (title, author, ISBN, price, year)>
 
 <!ELEMENT title (#PCDATA)>
-<!ELEMENT author (#PCDATA)>
+<!ELEMENT author (firstname, lastname)>
+<!ELEMENT firstname(#PCDATA)>
+<!ELEMENT lastname(#PCDATA)>
+<!ELEMENT ISBN(#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
