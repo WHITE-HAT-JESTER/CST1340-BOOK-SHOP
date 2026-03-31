@@ -68,14 +68,29 @@ submit_log_in.addEventListener("click", () => {
 
 // AFTER MODEL
 // when we get the full description modal
-var modal= document.getElementById('full-description');
+const bookcards= function (){document.getElementsByClassName('bookcard-container');
+       
+    for (let i = 0; i < bookcards.length; i++) {
             
-window.onclick = function(event) {
+        bookcards[i].addEventListener("hover", () => {
+                document.getElementById('full-description').style.display = "block";
 
-    //if it is the full decription, close it
-    if (event.target == modal) {
-        modal2.style.display = "none";
+                 window.onclick = function(event) {
+
+                //if it is the full decription, close it
+                if (event.target == book) {
+                    book.style.display = "none";
+                    }
+
+            }
+            })
+
+           
         }
-                        
-}
+
+        return bookcards;
+};
+
+document.getElementById('bookcard-container')= bookcards();
+
 
