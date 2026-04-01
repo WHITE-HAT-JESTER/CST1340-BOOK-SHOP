@@ -8,6 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
 <head>
     <title>Browse Books</title>
+    <!-- LINK TO CSS IF NEEDED <link rel="stylesheet" href="css/style.css"></link>-->
 </head>
 
 <body>
@@ -39,8 +40,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 </table>
 
+<<<<<<< HEAD
 <a href="homepage.html">Back to Home</a><br><br>
 <a href="browsepage.html">Browse by Category</a><br><br>
+=======
+<a href="homepage.html">Back to Home</a><br></br>
+<a href="browsepage.html">Browse by Category</a><br></br>
+<a href="librarywishlist.html">View Wishlist</a><br></br>    
+<a href="cartpage.html">View Cart</a><br></br>
+>>>>>>> b224695dc9b73a6c9d76c87d3839e471400db988
 
 </body>
 </html>
