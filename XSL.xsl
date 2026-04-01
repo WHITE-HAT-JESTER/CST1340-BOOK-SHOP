@@ -41,8 +41,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <a href="homepage.html">Back to Home</a><br><br>
 <a href="browsepage.html">Browse by Category</a><br><br>
-<a href="librarywishlist.html">View Wishlist</a><br><br>    
-<a href="cartpage.html">View Cart</a><br><br>
 
 </body>
 </html>
