@@ -39,9 +39,9 @@
             </div>
             <ul class="nav-links">
                 <!--navigation links-->
-                    <li><a href="homepage.html">Home</a></li>
+                    <li><a>Home</a></li>
                     <li class = "dropdown">
-                        <a href="browsepage.html">Browse</a>
+                        <a href="pages/browsepage.html">Browse</a>
                         <div class="dropdown_item">
                             <a href="books.xml">Fantasy</a>
                             <a href="books.xml">Sci-Fi</a>
@@ -119,10 +119,6 @@
                     <p>{short-description}</p>
                 </div>
 
-                <!--buttons-->
-                <div class="book-buttons">
-                    <button onclick="addToCart()" style="background-color:lightpink" >Cart</button>
-
                     <!--full description button -->
                     <button onclick="this.closest('.bookcard-container').querySelector('.full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
                     
@@ -149,12 +145,10 @@
                                     <p>{full-description}</p><br><br><br>
                                 </div>
                                 
-                                <div class="book-buttons">
-                                    <button onclick="addToCart()" style="background-color:lightpink" >Cart</button>
-                                </div><br><br>
+                             <!--<input type="text" placeholder="Penny for your thoughts..." name="review" maxlength="16000"><br><br>
+                                <button type = "submit" onclick="document.getElementById('review').style.display='none'" style="background-color:lightpink"         class="review">Share</button>-- possible review section for future implementation-->  
 
-                                <input type="text" placeholder="Penny for your thoughts..." name="review" maxlength="16000"><br><br>
-                                <button type = "submit" onclick="document.getElementById('review').style.display='none'" style="background-color:lightpink" class="review">Share</button>
+
                             </div><br><br>
                         </form>
                     </div>
