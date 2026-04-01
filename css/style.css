@@ -295,7 +295,7 @@ footer .right{
     float:right;
     width: 50%;
 }
-table {
+.opening-table {
     border: 1px solid var(--text_secondary);
     margin-left: auto;
     margin-right: auto;
@@ -304,23 +304,23 @@ table {
     width: 75%;
 }
 
-tr {
+.opening-table tr {
     border: 1px solid var(--text_primary);
 }
 
-tr:hover{
+.opening-table tr:hover{
     background-color:var(--accent_primary);
-    transform: scale(1.1);
     color: var(--bg_secondary);
     transition: all 0.2s ease-in-out;
     box-shadow: 0 0 6px var(--accent_glow);
 }
 
-tr:hover td{
+.opening-table tr:hover td{
     color:var(--bg_secondary);
+    transform: scale(1.1);
 }
 
-td {
+.opening-table td {
     color: var(--text_secondary)
 }
 
