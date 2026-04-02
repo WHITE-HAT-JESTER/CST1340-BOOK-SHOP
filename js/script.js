@@ -1,3 +1,23 @@
+//browse page dropdown menu coding2go
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("show");
+
+    // optional: redirect
+    window.location.href = "browsepage.html";
+}
+
+    // Optional: close dropdown when clicking outside
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropdown button')) {
+        const dropdown = document.getElementById("dropdown");
+        if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+        }
+    }
+
+    }
+
 //theme switcher coding2go
 
 let darkmode = localStorage.getItem('darkmode')

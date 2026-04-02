@@ -2,6 +2,7 @@
 
 <!ELEMENT category (book+)>
 <!ATTLIST category name CDATA #REQUIRED>
+<!ATTLIST book genre CDATA #REQUIRED>
 
 <!ELEMENT book (title, author, ISBN, price, year)>
 

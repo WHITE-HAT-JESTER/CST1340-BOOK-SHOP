@@ -40,21 +40,20 @@
             <ul class="nav-links">
                 <!--navigation links-->
                     <li><a href="homepage.html">Home</a></li>
-                    <li class = "dropdown">
-                        <a href="browsepage.html">Browse</a>
-                        <div class="dropdown_item">
-                           <div id="dropdown"class="dropdown_item">
-                            <a href="#fantasy">Fantasy</a>
-                            <a href="#sci-fi">Sci-Fi</a>
-                            <a href="#romance">Romance</a>
-                            <a href="#thriller">Thriller</a>
-                            <a href="#mystery">Mystery</a>
-                            <a href="#horror">Horror</a>
-                            <a href="#childrens">Children's</a>
-                            <a href="#non-fiction">Non-fiction</a>
-                        </div>
-                        </div>
+                    <li class="dropdown">
+                    <button onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">Browse</button>
+                    <div id="dropdown" class="dropdown_item">
+                        <a href="#fantasy">Fantasy</a>
+                        <a href="#sci-fi">Sci-Fi</a>
+                        <a href="#romance">Romance</a>
+                        <a href="#thriller">Thriller</a>
+                        <a href="#mystery">Mystery</a>
+                        <a href="#horror">Horror</a>
+                        <a href="#childrens">Children's</a>
+                        <a href="#non-fiction">Non-fiction</a>
+                    </div>
                     </li>
+
             </ul>
         <div class = "navbar-buttons">
             <div class="theme-toggle">
@@ -188,57 +187,24 @@
                     </div>
                 </div><br><br>
 
-                <!--book details-->
-                <div class="book-details">
-                    <h3>{title}</h3>
-                    <h4>by {author}</h4><br>
-                    <p>{price}</p><br>
-                    <p>{short-description}</p>
-                </div>
-
-                    <!--full description button -->
-                    <button onclick="this.closest('.bookcard').querySelector('.full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
                     
                     <!--pop-up for full description-->
-                    <div class="full-description modal">
-                        <span onclick="this.closest('.full-description').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <form>
-                            <div class="container">
-                                <div class="book-cover">
-                                    <img src="{cover}" class="book-cover"><br>
-                            
-                                    <div class="reactions">
-                                        <button onclick="like-button">❤️</button>
-                                        <button onclick="meh-button">➖</button>
-                                        <button onclick="notforme-button">💔</button>
-                                    </div>
-                                </div><br><br>
-
+                    <div class="full-description">
                                 <div class="full-book-details">
                                     <h2><b>{title}</b></h2>
                                     <h3><b>by {author}</b></h3><br>
                                     <h4>{rating}</h4><br>
                                     <h5><b>{price}</b></h5><br><br>
-                                    <p>{full-description}</p><br><br><br>
+                                    <p>{details}</p><br><br><br>
                                 </div>
 
                                 <template data-full-book-details-template>
                                 <div class="full-book-details"></div>
                                 </template>
-                                
-                             <!--<input type="text" placeholder="Penny for your thoughts..." name="review" maxlength="16000"><br><br>
-                                <button type = "submit" onclick="document.getElementById('review').style.display='none'" style="background-color:lightpink"         class="review">Share</button>-- possible review section for future implementation-->  
-
-
-                            </div><br><br>
-                        </form>
-                    </div>
-                    
-
-                    
-                </div>
-
+                
+                    </div>  
             </div>
+
         </xsl:for-each>>
     <!--link to JavaScript file-->
     <script src="js/script.js" defer></script>

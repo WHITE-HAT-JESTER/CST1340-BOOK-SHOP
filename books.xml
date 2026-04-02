@@ -12,7 +12,10 @@
             <ISBN>9780439023481 </ISBN>
             <price>16.50</price>
             <year>2008</year>
-            <genre>Sci-Fi</genre>
+            <book genre="Sci-Fi"></book>
+            <details>
+                <summary>A dystopian novel about a televised fight to the death.</summary>
+            </details>
         </book>
 
         <book>
@@ -24,7 +27,10 @@
             <ISBN>9780441172719</ISBN>
             <price>25.20</price>
             <year>1965</year>
-            <genre>Sci-Fi</genre>
+            <book genre="Sci-Fi"></book>
+            <details>
+                <summary>A science fiction epic set on the desert planet Arrakis.</summary>
+            </details>
         </book> 
 
          <book>
@@ -36,7 +42,10 @@
             <ISBN>9780441569595</ISBN>
             <price>21.00</price>
             <year>1984</year>
-            <genre>Sci-Fi</genre>
+            <book genre="Sci-Fi"></book>
+            <details>
+                <summary>A cyberpunk novel that coined the term "cyberspace".</summary>
+            </details>
         </book> 
     </category>
 
@@ -50,7 +59,25 @@
             <ISBN>9780142403877 </ISBN>
             <price>10.20</price>
             <year>2000</year>
+            <book genre="Children"></book>
+            <details>
+                <summary>A clever mouse outwits predators in the forest.</summary>
+            </details>
         </book>
+
+        <book>
+            <title>Where the Wild Things Are</title>
+            <author>
+                <firstname>Maurice</firstname> 
+                <lastname>Sendak</lastname>
+            </author>
+            <ISBN>9780064431781</ISBN>
+            <price>10.20</price>
+            <year>1963</year>
+            <book genre="Children"></book>
+            <details>
+            <summary>A boy named Max travels to an island of wild creatures.</summary>
+            </details>
 
          <book>
             <title>Olivia</title>
@@ -61,7 +88,10 @@
             <ISBN>9780688168583</ISBN>
             <price>12.00</price>
             <year>2000</year>
-            <genre>Children</genre>
+            <book genre="Children"></book>
+            <details>
+                <summary>A spirited pig named Olivia navigates childhood adventures.</summary>
+            </details>
         </book>
 
         </category>
@@ -76,6 +106,10 @@
             <ISBN>9780307588364</ISBN>
             <price>12.10</price>
             <year>2012</year>
+            <book genre="Mystery"></book>
+            <details>
+                <summary>A psychological thriller about a missing wife and a suspicious husband.</summary>
+            </details>
         </book>
 
         <book >
@@ -87,8 +121,12 @@
             <ISBN>9781538753952</ISBN>
             <price>14.10</price>
             <year>2026</year>
-            <genre>Mystery</genre>
+            <book genre="Mystery"></book>
+            <details>
+                <summary>A suspenseful tale of secrets and lies in a marriage.</summary>
+            </details>
         </book>
+
     </category>
 
     <category name="thriller">
@@ -101,7 +139,10 @@
             <ISBN>9781982137274</ISBN>
             <price>14.25</price>
             <year>1998</year>
-            <genre>Thriller</genre>
+            <book genre="Thriller"></book>
+            <details>
+                <summary>A young FBI trainee seeks help from a cannibalistic serial killer.</summary>
+            </details>
         </book>
 
         <book>
@@ -113,7 +154,19 @@
             <ISBN></ISBN>
             <price>14.25</price>
             <year>2026</year>
-            <genre>Thriller</genre>
+            <book genre="Thriller"></book>
+        </book>
+
+        <book>
+            <title>Shutter Island</title>
+            <author>
+                <firstname>Dennis</firstname> 
+                <lastname>Lehane</lastname>
+            </author>
+            <ISBN>9781416550602</ISBN>
+            <price>14.25</price>
+            <year>2003</year>
+            <book genre="Thriller"></book>
         </book>
     </category>
 
@@ -127,7 +180,7 @@
             <ISBN>9780618743514</ISBN>
             <price>12.50</price>
             <year>2011</year>
-            <genre>Fantasy</genre>
+            <book genre="Fantasy"></book>
         </book>
 
          <book> 
@@ -139,7 +192,34 @@
             <ISBN>9781603190241</ISBN>
             <price>10.50</price>
             <year>1865</year>
-            <genre>Fantasy</genre>
+            <book genre="Fantasy"></book>
+            <details>
+                <summary>A young girl falls down a rabbit hole into a whimsical world.</summary>
+            </details>
+        </book>
+
+        <book> 
+            <title>Harry Potter and the Sorcerer's Stone</title>
+            <author>
+                <firstname>J.K.</firstname> 
+                <lastname>Rowling</lastname>
+            </author>
+            <ISBN>9780590353427</ISBN>
+            <price>12.50</price>
+            <year>1997</year>
+            <book genre="Fantasy"></book>
+        </book>
+
+        <book> 
+            <title>The Hobbit</title>
+            <author>
+                <firstname>J.R.R.</firstname> 
+                <lastname>Tolkien</lastname>
+            </author>
+            <ISBN>9780547928227</ISBN>
+            <price>14.50</price>
+            <year>1937</year>
+            <book genre="Fantasy"></book>
         </book>
     </category>
 
@@ -152,6 +232,7 @@
             </author>
             <price>15.10</price>
             <year>2012</year>
+            <book genre="Romance"></book>
         </book>
 
         <book> 
@@ -163,7 +244,7 @@
             <ISBN>9781713566511</ISBN>
             <price>15.55</price>
             <year>2016</year>
-            <genre>Romance</genre>
+            <book genre="Romance"></book>
         </book>
 
         <book> 
@@ -175,7 +256,7 @@
             <ISBN>9781250311203</ISBN>
             <price>15.55</price>
             <year>2019</year>
-            <genre>Romance</genre>
+            <book genre="Romance"></book>
         </book>
     
     </category>
@@ -190,7 +271,7 @@
             <author>Charles Duhigg</author>
             <price>14.25</price>
             <year>2012</year>
-            <genre>Non-Fiction</genre>
+           <book genre="Non-Fiction"></book>
         </book>
 
         <book> 
@@ -202,7 +283,7 @@
             <ISBN>9780140366286</ISBN>
             <price>25.20</price>
             <year>1947</year>
-            <genre>Non-Fiction</genre>
+            <book genre="Non-Fiction"></book>
         </book>
 
         <book> 
@@ -214,7 +295,7 @@
             <ISBN>9780399590504</ISBN>
             <price>18.00</price>
             <year>2018</year>
-            <genre>Non-Fiction</genre>
+            <book genre="Non-Fiction"></book>
         </book>
     </category>
 </bookshop>
