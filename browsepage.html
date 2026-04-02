@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="XSL.xsl">
 
     <!--link to JavaScript file-->
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.js" async ="false" ></script>
 
     <!--link to DTD-->
     <link rel="DTD" href="DTD.dtd">
@@ -40,7 +40,7 @@
             </div>
             <ul class="nav-links">
                 <!--navigation links-->
-                    <li><a href="../homepage.html">Home</a></li>
+                    <li><a href="homepage.html">Home</a></li>
                     <li class = "dropdown">
                         <a>Browse</a>
                         <div class="dropdown_item">
@@ -83,11 +83,17 @@
         </div>
 
             <!--search bar-->
-            <div class="search-container">
-                <form action="/search" method="get">
-                    <input type="text" placeholder="Searching for something?" name="search">
-                    <button type="submit">Search</button>
-                </form>
+            <div class="search-container" aria-label="Book search">
+                <input type="search"
+                    id="search-input"
+                    class="search-input"
+                    data-search
+                    name="q"
+                    placeholder="Search the book list..."
+                    autocomplete="off"
+                    aria-label="Search books" />
+
+                <button type="button" id="search-button" class="search-button">Search</button>
             </div>
    </header>
    <hr>
@@ -95,7 +101,7 @@
    <main>
         <h2>Welcome Dear Guilty Reader!</h2>
         <xsl:for-each select ="books/book"><!--for each book element in the XML file, create a book card-->
-            <div class="bookcard-container"> <!--container for book cards-->
+            <div class="bookcard"> <!--container for book cards-->
 
                 <!--book cover ILLEGAL PATH-->
                 <div class="book-cover">
@@ -118,7 +124,7 @@
                 </div><br>
 
                     <!--full description button -->
-                    <button onclick="this.closest('.bookcard-container').querySelector('.full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
+                    <button onclick="this.closest('.bookcard').querySelector('.full-description').style.display='block'" style="width:auto;">Wanna know more?</button>
                     
                     <!--pop-up for full description-->
                     <div class="full-description modal">
@@ -135,13 +141,17 @@
                                     </div>
                                 </div><br><br>
 
-                                <div class="full-book-details">
+                                <div class="full-book-details" data-bookcard>
                                     <h2><b>{title}</b></h2>
                                     <h3><b>by {author}</b></h3><br>
                                     <h4>{rating}</h4><br>
                                     <h5><b>{price}</b></h5><br><br>
                                     <p>{full-description}</p><br><br><br>
                                 </div>
+
+                                <template data-full-book-details-template>
+                                <div class="full-book-details"></div>
+                                </template>
                                 
                                  <!--<input type="text" placeholder="Penny for your thoughts..." name="review" maxlength="16000"><br><br>
                                 <button type = "submit" onclick="document.getElementById('review').style.display='none'" style="background-color:lightpink"         class="review">Share</button>-- possible review section for future implementation-->  
@@ -153,7 +163,7 @@
             </div>
         </xsl:for-each>
     <!--link to JavaScript file-->
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.js" async="false"></script>
    </main>
    
    <footer>

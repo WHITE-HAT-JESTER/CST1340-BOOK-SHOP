@@ -12,6 +12,7 @@
             <ISBN>9780439023481 </ISBN>
             <price>16.50</price>
             <year>2008</year>
+            <genre>Sci-Fi</genre>
         </book>
 
         <book>
@@ -23,6 +24,7 @@
             <ISBN>9780441172719</ISBN>
             <price>25.20</price>
             <year>1965</year>
+            <genre>Sci-Fi</genre>
         </book> 
 
          <book>
@@ -34,6 +36,7 @@
             <ISBN>9780441569595</ISBN>
             <price>21.00</price>
             <year>1984</year>
+            <genre>Sci-Fi</genre>
         </book> 
     </category>
 
@@ -58,6 +61,7 @@
             <ISBN>9780688168583</ISBN>
             <price>12.00</price>
             <year>2000</year>
+            <genre>Children</genre>
         </book>
 
         </category>
@@ -83,6 +87,7 @@
             <ISBN>9781538753952</ISBN>
             <price>14.10</price>
             <year>2026</year>
+            <genre>Mystery</genre>
         </book>
     </category>
 
@@ -96,6 +101,7 @@
             <ISBN>9781982137274</ISBN>
             <price>14.25</price>
             <year>1998</year>
+            <genre>Thriller</genre>
         </book>
 
         <book>
@@ -107,6 +113,7 @@
             <ISBN></ISBN>
             <price>14.25</price>
             <year>2026</year>
+            <genre>Thriller</genre>
         </book>
     </category>
 
@@ -120,6 +127,7 @@
             <ISBN>9780618743514</ISBN>
             <price>12.50</price>
             <year>2011</year>
+            <genre>Fantasy</genre>
         </book>
 
          <book> 
@@ -131,6 +139,7 @@
             <ISBN>9781603190241</ISBN>
             <price>10.50</price>
             <year>1865</year>
+            <genre>Fantasy</genre>
         </book>
     </category>
 
@@ -154,7 +163,21 @@
             <ISBN>9781713566511</ISBN>
             <price>15.55</price>
             <year>2016</year>
+            <genre>Romance</genre>
         </book>
+
+        <book> 
+            <title>Red, White & Royal Blue</title>
+            <author>
+                <firstname>Casey</firstname> 
+                <lastname>McQuiston</lastname>
+            </author>
+            <ISBN>9781250311203</ISBN>
+            <price>15.55</price>
+            <year>2019</year>
+            <genre>Romance</genre>
+        </book>
+    
     </category>
 
     <category name="non-fiction">
@@ -167,6 +190,7 @@
             <author>Charles Duhigg</author>
             <price>14.25</price>
             <year>2012</year>
+            <genre>Non-Fiction</genre>
         </book>
 
         <book> 
@@ -178,6 +202,19 @@
             <ISBN>9780140366286</ISBN>
             <price>25.20</price>
             <year>1947</year>
+            <genre>Non-Fiction</genre>
+        </book>
+
+        <book> 
+            <title>Educated</title>
+            <author>
+                <firstname>Tara</firstname> 
+                <lastname>Westover</lastname>
+            </author>
+            <ISBN>9780399590504</ISBN>
+            <price>18.00</price>
+            <year>2018</year>
+            <genre>Non-Fiction</genre>
         </book>
     </category>
 </bookshop>
