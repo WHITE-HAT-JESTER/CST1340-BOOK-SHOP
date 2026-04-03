@@ -96,7 +96,7 @@
 
   // Load initial books
   if (document.body.hasAttribute('data-homepage')) {
-    loadBooks(null, 6);
+    loadBooks(null, 5);
   } else {
     loadBooks();
   }
