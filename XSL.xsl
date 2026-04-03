@@ -22,10 +22,12 @@
 </tr>
 <xsl:template match="/bookshop">
   <xsl:for-each select="category/book">
+
  
 <xsl:if test="title and author">
 <tr>
     <td><xsl:value-of select="title"/></td>
+    <td><xsl:value-of select="child::book/@genre"/></td>
     <td><p><xsl:value-of select="description"/></p></td>
     <td>
         <xsl:value-of select="author/firstname"/>
