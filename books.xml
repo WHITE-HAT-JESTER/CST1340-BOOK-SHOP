@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--link to XSL file. which transforms the XML data into HTML elements-->
-<?xml-stylesheet type="text/xsl" title="DEAR GUILTY READER" href="XSL.xsl"?>
-<!DOCTYPE bookshop SYSTEM "DTD.dtd">
+<!DOCTYPE bookshop SYSTEM "books.dtd">
+<?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL.xsl"?>
 
 <bookshop>
-    <category name="scifi">
-        <book genre="scifi">
-            <title>The Hunger Games</title>
-            <description>In a dystopian future, Katniss Everdeen volunteers for a deadly hunger games to save her sister in turn creating a rebellion againt the opposing goverment</description>
+   <category name="scifi">
+        <book>
+            <bookcover url="https://stateofmind13.com/wp-content/uploads/2012/02/the-hunger-games-book-cover.jpg"/>
+            <title  >The Hunger Games</title>
+            <description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
             <author>
                 <firstname>Suzanne</firstname> 
                 <lastname>Collins</lastname>
@@ -17,7 +17,8 @@
             <year>2008</year>
         </book>
 
-        <book genre="scifi">
+        <book>
+            <bookcover url="https://static.wixstatic.com/media/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg/v1/fill/w_188,h_284,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg"/>
             <title>Dune</title>
             <description>On a desert planet, Paul Atreides navigates through politics, ecology and mysticism to become a rebellion leader.</description>
             <author>
@@ -29,7 +30,8 @@
             <year>1965</year>
         </book> 
 
-        <book genre="scifi">
+        <book>
+            <bookcover url="https://cdn.dc5.ro/img-prod/2007693969-1.jpeg"/>
             <title>Neuromancer</title>
             <description>Geralt River, a monster hunter,navigating through a medevil fantasy world filled with politics and danger.</description>
             <author>
@@ -43,7 +45,8 @@
     </category>
 
     <category name="children">  
-        <book genre="children">
+        <book>
+            <bookcover url="https://c7.alamy.com/comp/2DBK1FJ/the-gruffalo-by-julia-donaldson-and-axel-scheffler-childrens-picture-book-2DBK1FJ.jpg"/>
             <title>The Gruffalo</title>
             <description>The gruffalo is a fearsome creature creaed by a mouse to save itself from creature in the woods but encounters a suprise.</description>
             <author>
@@ -55,7 +58,8 @@
             <year>2000</year>
         </book>
 
-        <book genre="children">
+        <book>
+            <bookcover url="https://www.fictiondb.com/coversth/th_0689829531.jpg"/>
             <title>Olivia</title>
             <description>A herioc and mischiveous piglet named Olivia who does things her own way.</description>
             <author>
@@ -69,7 +73,8 @@
     </category>
 
     <category name="thriller">
-        <book genre="thriller">
+        <book>
+            <bookcover url="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08125029341869.55eebb25e5ed5.jpg"/>
             <title>Gone Girl</title>
             <description>A twisted thriller of a marriage that turns out to be a deadly game of cat and mouse.</description>
             <author>
@@ -81,7 +86,8 @@
             <year>2012</year>
         </book>
 
-        <book genre="thriller">
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/41rIlFGkRDL._SY445_SX342_FMwebp_.jpg"/>
             <title>My Husbands Wife</title>
             <description>Psychological thriller about a women waking up from a cooma to find her husband's new marriage to her sister is a shocking twist to her quest of truth and identity.</description>
             <author>
@@ -95,19 +101,21 @@
     </category>
 
     <category name="mystery">
-        <book genre="mystery">
-            <title>The Cute Couple</title>
-            <description>A journalist investigates a murder at a couples therapy retreat.</description>
+        <book> 
+            <bookcover url="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982150341/devil-in-a-blue-dress-30th-anniversary-edition-9781982150341_lg.jpg"/>
+            <title>Devil in a Blue Dress</title>
+            <description>Easy Rawlins, a black World War Two vet searches for a missing white woman in 1948LA, navigating racism and corruption</description>
             <author>
-                <firstname>Alex</firstname> 
-                <lastname>Michaelides</lastname>
+                <firstname>Walter</firstname> 
+                <lastname>Mosley</lastname>
             </author>
-            <ISBN>9780425284683</ISBN>
+            <ISBN>9781982150341</ISBN>
             <price>16.20</price>
-            <year>2023</year>
+            <year>1990</year>
         </book>
 
-       <book genre="mystery">
+       <book>
+            <bookcover url="https://m.media-amazon.com/images/I/514E477GU1L.jpg"/>
             <title>And Then There Were None</title>
             <description>Ten strangers are invited to an isolated island, only to be killed off one by one.</description>
             <author>
@@ -121,7 +129,8 @@
     </category>
 
     <category name="horror">
-        <book genre="horror">
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/41igFYPUV9L._SY445_SX342_QL70_FMwebp_.jpg"/>
             <title>The Haunting Hill House</title>
             <description>A group explores a mansion with a history of supernatural events. </description>
             <author>
@@ -133,7 +142,8 @@
             <year>1959</year>
         </book>
 
-       <book genre="horror">
+       <book>
+            <bookcover url="https://m.media-amazon.com/images/I/513x+J9aAHL._SY300_SX300_QL70_FMwebp_.jpg"/>
             <title>The Shining</title>
             <description>A family gets trapped in a haunted hotel with terrifying consequences.</description>
             <author>
@@ -146,8 +156,9 @@
         </book>
     </category>
 
-    <category name="fantasy">
-        <book genre="fantasy"> 
+    <category name="fanatasy">
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/51iML7T0PvL._SY300_SX300_QL70_FMwebp_.jpg"/> 
             <title>The Night Circus</title>
             <description>A mystical tale of a magical competition between two illisuions, set in a dreamlike circus that apperas at night.</description>
             <author>
@@ -159,7 +170,8 @@
             <year>2011</year>
         </book>
 
-        <book genre="fantasy"> 
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/51S-ww4ET2L._SY445_SX342_FMwebp_.jpg"/> 
             <title>Alices Adventure in Wonderland</title>
             <description>A whimsical classic about a girl who falls down a rabbit hole into a fantastical world of strange creatures and logic-defying adventures.</description>
             <author>
@@ -173,7 +185,8 @@
     </category>
 
     <category name="romance">
-        <book genre="romance">
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/41YN7Ng8XYL._SY445_SX342_FMwebp_.jpg"/>
             <title>The Fault in Our Stars</title>
             <description>A heart-wrenching love story about two teens facing lifes toughest questions.</description>
             <author>
@@ -184,7 +197,8 @@
             <year>2012</year>
         </book>
 
-        <book genre="romance"> 
+        <book> 
+            <bookcover url="https://m.media-amazon.com/images/I/71xZvembMcL._SX342_.jpg"/>
             <title>The Hating Game</title>
             <description>A witty, enemies-to-lovers rom-com about office rivals.</description>
             <author>
@@ -198,7 +212,8 @@
     </category>
 
     <category name="non-fiction">
-        <book genre="non-fiction">
+        <book>
+            <bookcover url="https://m.media-amazon.com/images/I/71fFIwvOipL._SX342_.jpg"/>
             <title>The Power of Habit</title>
             <description>A non-fiction bestseller exploring how habits shape our lives and how we can change them.</description>
             <author>
@@ -210,7 +225,8 @@
             <year>2012</year>
         </book>
 
-        <book genre="non-fiction"> 
+        <book> 
+            <bookcover url="https://m.media-amazon.com/images/I/51FeSmUzbRL._SY300_SX300_QL70_FMwebp_.jpg"/>
             <title>The Diary of a Young Girl</title>
             <description>A powerful true account of aa young girls's experience during World War Two offering hope and insight.</description>
             <author>
