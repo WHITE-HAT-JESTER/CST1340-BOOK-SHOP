@@ -391,6 +391,11 @@ footer > h1{
 footer a:link{
     color: var(--text-primary);
 }
-.copyright{
-    color: var(--text_tertiary);
+.bookcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
+
