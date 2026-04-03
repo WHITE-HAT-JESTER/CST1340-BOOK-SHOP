@@ -144,8 +144,8 @@
         </book>
     </category>
 
-    <category name="fanatasy">
-        <book genre="fanatasy"> 
+    <category name="fantasy">
+        <book genre="fantasy"> 
             <title>The Night Circus</title>
             <description>A mystical tale of a magical competition between two illisuions, set in a dreamlike circus that apperas at night.</description>
             <author>
@@ -157,7 +157,7 @@
             <year>2011</year>
         </book>
 
-        <book genre="fanatasy"> 
+        <book genre="fantasy"> 
             <title>Alices Adventure in Wonderland</title>
             <description>A whimsical classic about a girl who falls down a rabbit hole into a fantastical world of strange creatures and logic-defying adventures.</description>
             <author>

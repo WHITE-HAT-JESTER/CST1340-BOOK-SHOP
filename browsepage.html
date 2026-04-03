@@ -42,7 +42,7 @@
                     <button onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">Browse</button>
                     <div id="dropdown" class="dropdown_item">
                         <a href="#fantasy" onclick="filterBooks('fantasy');">Fantasy</a>
-                        <a href="#sci-fi" onclick="filterBooks('sci-fi');">Sci-Fi</a>
+                        <a href="#sci-fi" onclick="filterBooks('scifi');">Sci-Fi</a>
                         <a href="#romance" onclick="filterBooks('romance');">Romance</a>
                         <a href="#thriller" onclick="filterBooks('thriller');">Thriller</a>
                         <a href="#mystery" onclick="filterBooks('mystery');">Mystery</a>
@@ -188,14 +188,6 @@
                 <div class="book-cover">
                     <img src="{cover}" alt="{title} cover" class="book-cover"><br>
                     <!--use the cover element from the XML file as the source for the image and the title element as the alt text-->
-                    <!--reaction bar-->
-                    <div class="reactions">
-                        <button onclick="like-button">❤️</button>
-                        <button onclick="meh-button">➖</button>
-                        <button onclick="notforme-button">💔</button>
-                    </div>
-                </div><br><br>
-
                     
                     <!--pop-up for full description-->
                     <div class="full-description">

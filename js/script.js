@@ -1,24 +1,8 @@
 (function() {
-  // Show/hide dropdown
-  function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown");
-    if (dropdown) dropdown.classList.toggle("hide");
-  }
-  window.toggleDropdown = toggleDropdown;
-
-  // Close dropdown when clicking outside
-  window.onclick = function(event) {
-    if (!event.target.closest('.dropdown')) {
-      const dropdown = document.getElementById("dropdown");
-      if (dropdown) dropdown.classList.remove("show");
-    }
-  };
-
+  
   // Filter books by genre
   function filterBooks(genre) {
-    const isHome = document.body.hasAttribute('data-homepage');
-    const limit = genre ? null : (isHome ? 5 : null);
-    loadBooks(genre, limit);
+    loadBooks(genre);
   }
   window.filterBooks = filterBooks;
 
@@ -40,22 +24,16 @@
         return !genre || (g && g.toLowerCase() === genre.toLowerCase());
       });
 
-      // Randomize if homepage limit
-      if (!genre && limit && books.length > limit) {
-        books.sort(() => Math.random() - 0.5);
-        books = books.slice(0, limit);
-      }
-
       // Build HTML output
       container.innerHTML = books.map(book => {
-        const title = book.getElementsByTagName('title')[0]?.textContent || "Unknown Title";
-        const authorFirst = book.getElementsByTagName('firstname')[0]?.textContent || "";
-        const authorLast = book.getElementsByTagName('lastname')[0]?.textContent || "";
+        const title = book.getElementsByTagName('title')[0]?.textContent;
+        const authorFirst = book.getElementsByTagName('firstname')[0]?.textContent ;
+        const authorLast = book.getElementsByTagName('lastname')[0]?.textContent;
         const author = `${authorFirst} ${authorLast}`.trim();
-        const details = book.getElementsByTagName('details')[0]?.textContent || "";
-        const price = book.getElementsByTagName('price')[0]?.textContent || "";
-        const cover = book.getElementsByTagName('cover')[0]?.textContent.trim() || "";
-        const bookGenre = book.getAttribute('genre') || 'Unknown';
+        const description = book.getElementsByTagName('description')[0]?.textContent;
+        const price = book.getElementsByTagName('price')[0]?.textContent;
+        const cover = book.getElementsByTagName('cover')[0]?.textContent.trim();
+        const bookGenre = book.getAttribute('genre');
 
         // genre-safe local fallback
         const genreKey = bookGenre.toLowerCase().replace(/[-\s]+/g, '');
@@ -81,7 +59,7 @@
               <h1>${title}</h1>
               <h3>by ${author}</h3>
               ${price ? `<h5>$${price}</h5>` : ""}
-              ${details ? `<p>${details}</p>` : ""}
+              ${description ? `<p>${description}</p>` : ""}
             </div>
           </div>
           <div class="book-tag">
@@ -92,13 +70,6 @@
       }).join('');
     };
     xhr.send();
-  }
-
-  // Load initial books
-  if (document.body.hasAttribute('data-homepage')) {
-    loadBooks(null, 5);
-  } else {
-    loadBooks();
   }
 
 //theme switcher coding2go
