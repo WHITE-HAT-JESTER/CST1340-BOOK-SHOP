@@ -45,12 +45,14 @@
           const isbn = book.getElementsByTagName('ISBN')[0]?.textContent.trim();
           if (isbn) {
             imageUrl = `https://covers.openlibrary.org/b/isbn/${encodeURIComponent(isbn)}-M.jpg`;
-          } else {
+          } else if (title) {
             imageUrl = `https://covers.openlibrary.org/b/title/${encodeURIComponent(title)}-M.jpg`;
+          } else {
+              imageUrl = localGenreImage;
           }
         }
 
-        return `
+         output +=`
           <div class="card" data-bookcard>
             <div class="card-front">
               <img src="${imageUrl}" alt="${title}" onerror="this.onerror=null;this.src='${localGenreImage}';">
@@ -59,7 +61,7 @@
               <h1>${title}</h1>
               <h3>by ${author}</h3>
               ${price ? `<h5>$${price}</h5>` : ""}
-              ${description ? `<p>${description}</p>` : ""}
+              <p>${description ? `<p>${description}</p>` : ""}</p>
             </div>
           </div>
           <div class="book-tag">
@@ -67,7 +69,7 @@
             <h3>by ${author}</h3>
           </div>
         `;
-      }).join('');
+      });
     };
     xhr.send();
   }
