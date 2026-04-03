@@ -120,8 +120,9 @@ if(darkmode === 'active') enableDarkmode()
 
 theme.addEventListener("click", () => {
     darkmode = localStorage.getItem('darkmode')
-    darkmode !== "active" ? enableDarkmode() : disableDarkMode()
+ darkmode !== "active" ? enableDarkmode() : disableDarkMode()
 })
+
 
 // AFTER MODEL
 // search bar filter function
