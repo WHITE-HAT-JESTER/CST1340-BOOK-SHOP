@@ -3,7 +3,7 @@
 
 <bookshop>
     <category name="scifi">
-        <book>
+        <book genre="scifi">
             <title>The Hunger Games</title>
             <description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
             <author>
@@ -15,7 +15,7 @@
             <year>2008</year>
         </book>
 
-        <book>
+        <book genre="scifi">
             <title>Dune</title>
             <description>On a desert planet, Paul Atreides navigates through politics, ecology and mysticism to become a rebellion leader.</description>
             <author>
@@ -27,7 +27,7 @@
             <year>1965</year>
         </book> 
 
-        <book>
+        <book genre="scifi">
             <title>Neuromancer</title>
             <description>Geralt River, a monster hunter,navigating through a medevil fantasy world filled with politics and danger.</description>
             <author>
@@ -41,7 +41,7 @@
     </category>
 
     <category name="children">  
-        <book>
+        <book genre="children">
             <title>The Gruffalo</title>
             <description>The gruffalo is a fearsome creature creaed by a mouse to save itself from creature in the woods but encounters a suprise.</description>
             <author>
@@ -53,7 +53,7 @@
             <year>2000</year>
         </book>
 
-        <book>
+        <book genre="children">
             <title>Olivia</title>
             <description>A herioc and mischiveous piglet named Olivia who does things her own way.</description>
             <author>
@@ -67,7 +67,7 @@
     </category>
 
     <category name="thriller">
-        <book>
+        <book genre="thriller">
             <title>Gone Girl</title>
             <description>A twisted thriller of a marriage that turns out to be a deadly game of cat and mouse.</description>
             <author>
@@ -79,7 +79,7 @@
             <year>2012</year>
         </book>
 
-        <book>
+        <book genre="thriller">
             <title>My Husbands Wife</title>
             <description>Psychological thriller about a women waking up from a cooma to find her husband's new marriage to her sister is a shocking twist to her quest of truth and identity.</description>
             <author>
@@ -93,7 +93,7 @@
     </category>
 
     <category name="mystery">
-        <book>
+        <book genre="mystery">
             <title>The Cute Couple</title>
             <description>A journalist investigates a murder at a couples therapy retreat.</description>
             <author>
@@ -105,7 +105,7 @@
             <year>2023</year>
         </book>
 
-       <book>
+       <book genre="mystery">
             <title>And Then There Were None</title>
             <description>Ten strangers are invited to an isolated island, only to be killed off one by one.</description>
             <author>
@@ -119,7 +119,7 @@
     </category>
 
     <category name="horror">
-        <book>
+        <book genre="horror">
             <title>The Haunting Hill House</title>
             <description>A group explores a mansion with a history of supernatural events. </description>
             <author>
@@ -131,7 +131,7 @@
             <year>1959</year>
         </book>
 
-       <book>
+       <book genre="horror">
             <title>The Shining</title>
             <description>A family gets trapped in a haunted hotel with terrifying consequences.</description>
             <author>
@@ -145,7 +145,7 @@
     </category>
 
     <category name="fanatasy">
-        <book> 
+        <book genre="fanatasy"> 
             <title>The Night Circus</title>
             <description>A mystical tale of a magical competition between two illisuions, set in a dreamlike circus that apperas at night.</description>
             <author>
@@ -157,7 +157,7 @@
             <year>2011</year>
         </book>
 
-        <book> 
+        <book genre="fanatasy"> 
             <title>Alices Adventure in Wonderland</title>
             <description>A whimsical classic about a girl who falls down a rabbit hole into a fantastical world of strange creatures and logic-defying adventures.</description>
             <author>
@@ -171,7 +171,7 @@
     </category>
 
     <category name="romance">
-        <book>
+        <book genre="romance">
             <title>The Fault in Our Stars</title>
             <description>A heart-wrenching love story about two teens facing lifes toughest questions.</description>
             <author>
@@ -182,7 +182,7 @@
             <year>2012</year>
         </book>
 
-        <book> 
+        <book genre="romance"> 
             <title>The Hating Game</title>
             <description>A witty, enemies-to-lovers rom-com about office rivals.</description>
             <author>
@@ -196,7 +196,7 @@
     </category>
 
     <category name="non-fiction">
-        <book>
+        <book genre="non-fiction">
             <title>The Power of Habit</title>
             <description>A non-fiction bestseller exploring how habits shape our lives and how we can change them.</description>
             <author>
@@ -208,7 +208,7 @@
             <year>2012</year>
         </book>
 
-        <book> 
+        <book genre="non-fiction"> 
             <title>The Diary of a Young Girl</title>
             <description>A powerful true account of aa young girls's experience during World War Two offering hope and insight.</description>
             <author>
