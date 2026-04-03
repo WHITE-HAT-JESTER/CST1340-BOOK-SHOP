@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="XSL.xsl"?>
-<!DOCTYPE bookshop SYSTEM "DTD.dtd">
+<!DOCTYPE bookshop SYSTEM "books.dtd">
+
 <bookshop>
     <category name="scifi">
-        <book genre="Sci-Fi">
+        <book>
             <title>The Hunger Games</title>
+            <description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
             <author>
                 <firstname>Suzanne</firstname> 
                 <lastname>Collins</lastname>
@@ -12,13 +13,11 @@
             <ISBN>9780439023481 </ISBN>
             <price>16.50</price>
             <year>2008</year>
-            <details>
-                <summary>A dystopian novel about a televised fight to the death.</summary>
-            </details>
         </book>
 
-        <book genre="Sci-Fi">
+        <book>
             <title>Dune</title>
+            <description>On a desert planet, Paul Atreides navigates through politics, ecology and mysticism to become a rebellion leader.</description>
             <author>
                 <firstname>Frank</firstname>
                 <lastname>Herbert</lastname>
@@ -26,13 +25,11 @@
             <ISBN>9780441172719</ISBN>
             <price>25.20</price>
             <year>1965</year>
-            <details>
-                <summary>A science fiction epic set on the desert planet Arrakis.</summary>
-            </details>
         </book> 
 
-         <book genre="Sci-Fi">
+        <book>
             <title>Neuromancer</title>
+            <description>Geralt River, a monster hunter,navigating through a medevil fantasy world filled with politics and danger.</description>
             <author>
                 <firstname>William</firstname>
                 <lastname>Gibson</lastname>
@@ -40,15 +37,13 @@
             <ISBN>9780441569595</ISBN>
             <price>21.00</price>
             <year>1984</year>
-            <details>
-                <summary>A cyberpunk novel that coined the term "cyberspace".</summary>
-            </details>
         </book> 
     </category>
 
     <category name="children">  
-        <book genre="Children">
+        <book>
             <title>The Gruffalo</title>
+            <description>The gruffalo is a fearsome creature creaed by a mouse to save itself from creature in the woods but encounters a suprise.</description>
             <author>
                 <firstname>Julia</firstname> 
                 <lastname>Donaldson</lastname>
@@ -56,27 +51,11 @@
             <ISBN>9780142403877 </ISBN>
             <price>10.20</price>
             <year>2000</year>
-            <details>
-                <summary>A clever mouse outwits predators in the forest.</summary>
-            </details>
         </book>
 
-        <book genre="Children">
-            <title>Where the Wild Things Are</title>
-            <author>
-                <firstname>Maurice</firstname> 
-                <lastname>Sendak</lastname>
-            </author>
-            <ISBN>9780064431781</ISBN>
-            <price>10.20</price>
-            <year>1963</year>
-            <details>
-                <summary>A boy named Max travels to an island of wild creatures.</summary>
-            </details>
-        </book>
-
-        <book genre="Children">
+        <book>
             <title>Olivia</title>
+            <description>A herioc and mischiveous piglet named Olivia who does things her own way.</description>
             <author>
                 <firstname>Ian</firstname> 
                 <lastname>Falconer</lastname>
@@ -84,16 +63,13 @@
             <ISBN>9780688168583</ISBN>
             <price>12.00</price>
             <year>2000</year>
-            <details>
-                <summary>A spirited pig named Olivia navigates childhood adventures.</summary>
-            </details>
         </book>
+    </category>
 
-        </category>
-
-    <category name="mystery">
-        <book genre="Mystery">
+    <category name="thriller">
+        <book>
             <title>Gone Girl</title>
+            <description>A twisted thriller of a marriage that turns out to be a deadly game of cat and mouse.</description>
             <author>
                 <firstname>Gillian</firstname> 
                 <lastname>Flynn</lastname>
@@ -101,13 +77,11 @@
             <ISBN>9780307588364</ISBN>
             <price>12.10</price>
             <year>2012</year>
-            <details>
-                <summary>A psychological thriller about a missing wife and a suspicious husband.</summary>
-            </details>
         </book>
 
-        <book genre="Mystery">
-            <title>My Husband's Wife</title>
+        <book>
+            <title>My Husbands Wife</title>
+            <description>Psychological thriller about a women waking up from a cooma to find her husband's new marriage to her sister is a shocking twist to her quest of truth and identity.</description>
             <author>
                 <firstname>Alice</firstname> 
                 <lastname>Feeney</lastname>
@@ -115,60 +89,65 @@
             <ISBN>9781538753952</ISBN>
             <price>14.10</price>
             <year>2026</year>
-            <details>
-                <summary>A suspenseful tale of secrets and lies in a marriage.</summary>
-            </details>
-        </book>
-
-    </category>
-
-    <category name="thriller">
-        <book genre="Thriller">
-            <title>The Silence of the Lambs</title>
-            <author>
-                <firstname>Thomase</firstname> 
-                <lastname>Harris</lastname>
-            </author>
-            <ISBN>9781982137274</ISBN>
-            <price>14.25</price>
-            <year>1998</year>
-            <details>
-                <summary>A young FBI trainee seeks help from a cannibalistic serial killer.</summary>
-            </details>
-        </book>
-
-        <book genre="Thriller">
-            <title>The Survivor</title>
-            <author>
-                <firstname>Andrew</firstname> 
-                <lastname>Raid</lastname>
-            </author>
-            <ISBN>9780316479823</ISBN>
-            <price>14.25</price>
-            <year>2026</year>
-            <details>
-                <summary>A gripping thriller about survival and secrets.</summary>
-            </details>
-        </book>
-
-        <book genre="Thriller">
-            <title>Shutter Island</title>
-            <author>
-                <firstname>Dennis</firstname> 
-                <lastname>Lehane</lastname>
-            </author>
-            <ISBN>9781416550602</ISBN>
-            <price>14.25</price>
-            <year>2003</year>
-            <details>
-                <summary>A psychological thriller set on an isolated island asylum.</summary>
-            </details>
         </book>
     </category>
 
-    <category name="fantasy">
-        <book genre="Fantasy">
+    <category name="mystery">
+        <book>
+            <title>The Cute Couple</title>
+            <description>A journalist investigates a murder at a couples therapy retreat.</description>
+            <author>
+                <firstname>Alex</firstname> 
+                <lastname>Michaelides</lastname>
+            </author>
+            <ISBN>9780425284683</ISBN>
+            <price>16.20</price>
+            <year>2023</year>
+        </book>
+
+       <book>
+            <title>And Then There Were None</title>
+            <description>Ten strangers are invited to an isolated island, only to be killed off one by one.</description>
+            <author>
+                <firstname>Agatha</firstname> 
+                <lastname>Christie</lastname>
+            </author>
+            <ISBN>9781443435134</ISBN>
+            <price>20.00</price>
+            <year>1939</year>
+        </book>
+    </category>
+
+    <category name="horror">
+        <book>
+            <title>The Haunting Hill House</title>
+            <description>A group explores a mansion with a history of supernatural events. </description>
+            <author>
+                <firstname>Shirley</firstname> 
+                <lastname>Jackson</lastname>
+            </author>
+            <ISBN>9780451524938</ISBN>
+            <price>15.20</price>
+            <year>1959</year>
+        </book>
+
+       <book>
+            <title>The Shining</title>
+            <description>A family gets trapped in a haunted hotel with terrifying consequences.</description>
+            <author>
+                <firstname>Stephen</firstname> 
+                <lastname>King</lastname>
+            </author>
+            <ISBN>9780307743653</ISBN>
+            <price>16.20</price>
+            <year>1977</year>
+        </book>
+    </category>
+
+    <category name="fanatasy">
+        <book> 
             <title>The Night Circus</title>
+            <description>A mystical tale of a magical competition between two illisuions, set in a dreamlike circus that apperas at night.</description>
             <author>
                 <firstname>Erin</firstname> 
                 <lastname>Morgenstern</lastname>
@@ -176,13 +155,11 @@
             <ISBN>9780618743514</ISBN>
             <price>12.50</price>
             <year>2011</year>
-            <details>
-                <summary>A magical competition between two young illusionists in a mysterious circus.</summary>
-            </details>
         </book>
 
-        <book genre="Fantasy">
-            <title>Alice's Adventure in Wonderland</title>
+        <book> 
+            <title>Alices Adventure in Wonderland</title>
+            <description>A whimsical classic about a girl who falls down a rabbit hole into a fantastical world of strange creatures and logic-defying adventures.</description>
             <author>
                 <firstname>Lewis</firstname> 
                 <lastname>Carroll</lastname>
@@ -190,57 +167,24 @@
             <ISBN>9781603190241</ISBN>
             <price>10.50</price>
             <year>1865</year>
-            <details>
-                <summary>A young girl falls down a rabbit hole into a whimsical world.</summary>
-            </details>
-        </book>
-
-        <book genre="Fantasy">
-            <title>Harry Potter and the Sorcerer's Stone</title>
-            <author>
-                <firstname>J.K.</firstname> 
-                <lastname>Rowling</lastname>
-            </author>
-            <ISBN>9780590353427</ISBN>
-            <price>12.50</price>
-            <year>1997</year>
-            <details>
-                <summary>A young wizard discovers his magical heritage and attends Hogwarts School.</summary>
-            </details>
-        </book>
-
-        <book genre="Fantasy">
-            <title>The Hobbit</title>
-            <author>
-                <firstname>J.R.R.</firstname> 
-                <lastname>Tolkien</lastname>
-            </author>
-            <ISBN>9780547928227</ISBN>
-            <price>14.50</price>
-            <year>1937</year>
-            <details>
-                <summary>A hobbit embarks on an unexpected journey with dwarves to reclaim treasure.</summary>
-            </details>
         </book>
     </category>
 
     <category name="romance">
-        <book genre="Romance">
+        <book>
             <title>The Fault in Our Stars</title>
+            <description>A heart-wrenching love story about two teens facing lifes toughest questions.</description>
             <author>
                 <firstname>John</firstname> 
                 <lastname>Green</lastname>
             </author>
-            <ISBN>9780525478812</ISBN>
             <price>15.10</price>
             <year>2012</year>
-            <details>
-                <summary>Two teenagers with cancer fall in love and embark on a journey to Amsterdam.</summary>
-            </details>
         </book>
 
-        <book genre="Romance">
+        <book> 
             <title>The Hating Game</title>
+            <description>A witty, enemies-to-lovers rom-com about office rivals.</description>
             <author>
                 <firstname>Sally</firstname> 
                 <lastname>Thorne</lastname>
@@ -248,44 +192,25 @@
             <ISBN>9781713566511</ISBN>
             <price>15.55</price>
             <year>2016</year>
-            <details>
-                <summary>Two office rivals engage in a battle of wills that turns into romance.</summary>
-            </details>
         </book>
-
-        <book genre="Romance">
-            <title>Red, White &amp; Royal Blue</title>
-            <author>
-                <firstname>Casey</firstname> 
-                <lastname>McQuiston</lastname>
-            </author>
-            <ISBN>9781250311203</ISBN>
-            <price>15.55</price>
-            <year>2019</year>
-            <details>
-                <summary>The First Son of the United States falls in love with a British prince.</summary>
-            </details>
-        </book>
-    
     </category>
 
     <category name="non-fiction">
-        <book genre="Non-Fiction">
+        <book>
             <title>The Power of Habit</title>
+            <description>A non-fiction bestseller exploring how habits shape our lives and how we can change them.</description>
             <author>
                 <firstname>Charles</firstname> 
                 <lastname>Duhigg</lastname>
             </author>
-            <ISBN>9780812981605</ISBN>
+            <author>Charles Duhigg</author>
             <price>14.25</price>
             <year>2012</year>
-            <details>
-                <summary>Why We Do What We Do in Life and Business.</summary>
-            </details>
         </book>
 
-        <book genre="Non-Fiction">
+        <book> 
             <title>The Diary of a Young Girl</title>
+            <description>A powerful true account of aa young girls's experience during World War Two offering hope and insight.</description>
             <author>
                 <firstname>Anne</firstname> 
                 <lastname>Frank</lastname>
@@ -293,23 +218,6 @@
             <ISBN>9780140366286</ISBN>
             <price>25.20</price>
             <year>1947</year>
-            <details>
-                <summary>The diary of a Jewish girl hiding from the Nazis during World War II.</summary>
-            </details>
-        </book>
-
-        <book genre="Non-Fiction">
-            <title>Educated</title>
-            <author>
-                <firstname>Tara</firstname> 
-                <lastname>Westover</lastname>
-            </author>
-            <ISBN>9780399590504</ISBN>
-            <price>18.00</price>
-            <year>2018</year>
-            <details>
-                <summary>A memoir about a woman who grows up in a survivalist family and pursues education.</summary>
-            </details>
         </book>
     </category>
 </bookshop>
