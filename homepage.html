@@ -23,8 +23,6 @@
     <link rel="DTD" href="DTD.dtd">
 
 </head>
-
-
 <body data-homepage> <!--defines the body/structure of the website-->
    <!--Home page for Dear Guilty Reader-->
    <header>
@@ -38,20 +36,18 @@
             <ul class="nav-links">
                 <!--navigation links-->
                     <li><a href="homepage.html">Home</a></li>
-                    <li class="dropdown">
-                    <a href="browsepage.html" onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">Browse</a>
-                    <div id="dropdown" class="dropdown_item">
-                        <a href="#fantasy" onclick="filterBooks('fantasy');">Fantasy</a>
-                        <a href="#sci-fi" onclick="filterBooks('scifi');">Sci-Fi</a>
-                        <a href="#romance" onclick="filterBooks('romance');">Romance</a>
-                        <a href="#thriller" onclick="filterBooks('thriller');">Thriller</a>
-                        <a href="#mystery" onclick="filterBooks('mystery');">Mystery</a>
-                        <a href="#horror" onclick="filterBooks('horror');">Horror</a>
-                        <a href="#childrens" onclick="filterBooks('children');">Children</a>
-                        <a href="#non-fiction" onclick="filterBooks('non-fiction');">Non-fiction</a>
-                    </div>
+                    <li class="dropdown"> <a href="books.xml">Browse</a>
+                        <div id="dropdown" class="dropdown_item">
+                            <a href="#fantasy" onclick="filterBooks('fantasy');">Fantasy</a>
+                            <a href="#sci-fi" onclick="filterBooks('scifi');">Sci-Fi</a>
+                            <a href="#romance" onclick="filterBooks('romance');">Romance</a>
+                            <a href="#thriller" onclick="filterBooks('thriller');">Thriller</a>
+                            <a href="#mystery" onclick="filterBooks('mystery');">Mystery</a>
+                            <a href="#horror" onclick="filterBooks('horror');">Horror</a>
+                            <a href="#childrens" onclick="filterBooks('children');">Children</a>
+                            <a href="#non-fiction" onclick="filterBooks('non-fiction');">Non-fiction</a>
+                        </div>
                     </li>
-
             </ul>
     <div class = "navbar_buttons">
             <div class="theme-toggle">
@@ -66,15 +62,12 @@
                 </svg>
                 </button>
             </div>
-            
         </nav>
 
         <div class = "main-header">
             <h1> DEAR GUILTY READER</h1>
             <h2>Your next guilty pleasure awaits.</h2>
         </div>
-
-    
    </header>
 
 
