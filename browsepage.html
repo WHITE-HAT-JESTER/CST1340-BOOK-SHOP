@@ -19,8 +19,6 @@
        <!--link to XSL file. which transforms the XML data into HTML elements-->
     <link rel="alternate" type="text/xsl" title="DEAR GUILTY READER" href="XSL.xsl">
 
-    <!--link to JavaScript file-->
-    <script src="js/script.js" async="false"></script>
 
     <!--link to DTD-->
     <link rel="DTD" href="DTD.dtd">
@@ -85,24 +83,13 @@
         </div>
 
         
-          <!--search bar-->
-            <div class="search-container" aria-label="Book search">
-                <input type="search"
-                    id="search-input"
-                    class="search-input"
-                    data-search
-                    name="q"
-                    placeholder="Search the book list..."
-                    autocomplete="off"
-                    aria-label="Search books" />
-            </div>
    </header>
 
 
    <main>
       
         
-        <div class="bookcards-container" data-bookcards-container>
+             <div class="bookcards-container" data-bookcards-container>
             <xsl:for-each select ="books/book"><!--for each book element in the XML file, create a book card-->
             <!--STATIC BOOK RECS - this is the book cards-->
         <div class="container-generic">
@@ -117,7 +104,7 @@
                             <div class="card-back">
                                 <h1>BOOK TITLE</h1>
                                 <p>Author Name | Genre
-                                    description description
+                                    description 
                                 </p>
                             </div>
                         </div>
@@ -132,7 +119,7 @@
                             <div class="card-back">
                                 <h1>BOOK TITLE</h1>
                                 <p>Author Name | Genre
-                                    description description
+                                    description 
                                 </p>
                             </div>
                         </div>
@@ -146,7 +133,7 @@
                             <div class="card-back">
                                 <h1>BOOK TITLE</h1>
                                 <p>Author Name | Genre
-                                    description description
+                                    description 
                                 </p>
                             </div>
                         </div>
@@ -160,7 +147,7 @@
                             <div class="card-back">
                                 <h1>BOOK TITLE</h1>
                                 <p>Author Name | Genre
-                                    description description
+                                    description 
                                 </p>
                             </div>
                         </div>
@@ -195,7 +182,7 @@
                                 <div class="full-book-details">
                                     <h2><b>{title}</b></h2>
                                     <h3><b>by {author}</b></h3><br>
-                                    
+                                   
                                     <h5><b>{price}</b></h5><br><br>
                                     <p>{description}</p><br><br><br>
                                 </div>
@@ -210,8 +197,7 @@
 
         </xsl:for-each>
     </div>
-     <!--link to JavaScript file-->
-    <script src="js/script.js" async="false"></script>
+     
    </main> 
    
    <footer>
@@ -265,7 +251,8 @@
         
         
    </footer>
-
+<!--link to JavaScript file-->
+    <script src="js/script.js" async="false"></script>
 </body>
 
 </html>

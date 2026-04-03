@@ -18,8 +18,6 @@
     <!--link to XSL file. which transforms the XML data into HTML elements-->
     <link rel="alternate" type="text/xsl" title="DEAR GUILTY READER" href="XSL.xsl">
 
-    <!--link to JavaScript file-->
-    <script src="js/script.js" async="false"></script>
 
     <!--link to DTD-->
     <link rel="DTD" href="DTD.dtd">
@@ -84,19 +82,7 @@
             <h2>Your next guilty pleasure awaits.</h2>
         </div>
 
-        
-          <!--search bar-->
-            <div class="search-container" aria-label="Book search">
-                <input type="search"
-                    id="search-input"
-                    class="search-input"
-                    data-search
-                    name="q"
-                    placeholder="Search the book list..."
-                    autocomplete="off"
-                    aria-label="Search books" />
-
-            </div>
+    
    </header>
 
 
@@ -210,8 +196,12 @@
 
         </xsl:for-each>
     </div>
-    <!--link to JavaScript file-->
-    <script src="js/script.js" async="false"></script>
+    <!--reviews-->
+  
+    <div id="review-container">
+        <!--static reviews-->
+    </div>
+    
    </main> 
    
    <footer>
@@ -265,7 +255,8 @@
         
         
    </footer>
-
+ <!--link to JavaScript file-->
+    <script src="js/script.js" async="false"></script>
 </body>
 
 </html>

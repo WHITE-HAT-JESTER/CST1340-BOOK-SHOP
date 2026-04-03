@@ -1,7 +1,7 @@
-   <!--link to XSL file. which transforms the XML data into HTML elements-->
-    <?xml-stylesheet type="text/xsl" title="DEAR GUILTY READER" href="XSL.xsl"?>
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookshop SYSTEM "books.dtd">
+<!--link to XSL file. which transforms the XML data into HTML elements-->
+<?xml-stylesheet type="text/xsl" title="DEAR GUILTY READER" href="XSL.xsl"?>
+<!DOCTYPE bookshop SYSTEM "DTD.dtd">
 
 <bookshop>
     <category name="scifi">

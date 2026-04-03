@@ -20,10 +20,8 @@
     <th>Price</th>
     <th>Year</th>
 </tr>
-<xsl:template match="/bookshop">
-  <xsl:for-each select="category/book">
 
- 
+  <xsl:for-each select="bookshop/category/book">
 <xsl:if test="title and author">
 <tr>
     <td><xsl:value-of select="title"/></td>
