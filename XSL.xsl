@@ -38,23 +38,6 @@
 
 </tr>
 </xsl:if>
-<div class="card" data-bookcard>
-          <div class="card-front">
-            <img>
-              <xsl:attribute name="src">
-                <xsl:value-of select="concat('images/', translate(@genre, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'cover.png')"/>
-              </xsl:attribute>
-              <xsl:attribute name="alt"><xsl:value-of select="title"/></xsl:attribute>
-            </img>
-          </div>
-          <div class="card-back">
-            <h1><xsl:value-of select="title"/></h1>
-            <h3><xsl:value-of select="concat(author/firstname, ' ', author/lastname)"/></h3>
-            <h5>$<xsl:value-of select="price"/></h5>
-            <p><xsl:value-of select="description"/></p>
-          </div>
-        </div>
-      
 </xsl:for-each>
 
 </table>
