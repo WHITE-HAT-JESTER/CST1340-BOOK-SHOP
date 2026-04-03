@@ -7,7 +7,7 @@
   window.filterBooks = filterBooks;
 
   // Load books from XML
-  function loadBooks(genre = null, limit = null) {
+  function loadBooks(genre = null) {
     const container = document.querySelector('[data-bookcards-container]');
     if (!container) return;
 
@@ -52,7 +52,7 @@
           }
         }
 
-         output +=`
+         return`
           <div class="card" data-bookcard>
             <div class="card-front">
               <img src="${imageUrl}" alt="${title}" onerror="this.onerror=null;this.src='${localGenreImage}';">
@@ -69,6 +69,8 @@
             <h3>by ${author}</h3>
           </div>
         `;
+
+       
       });
     };
     xhr.send();
@@ -98,31 +100,7 @@ theme.addEventListener("click", () => {
 
 
 // AFTER MODEL
-// search bar filter function
-const bookCardsContainer = document.querySelector('[data-bookcards-container]');
-const searchInput = document.querySelector('[data-search]');
-const searchButton = document.getElementById('search-button');
 
-let books = [];
-
-const applySearchFilter = () => {
-    const searchTerm = searchInput?.value.toLowerCase().trim() || '';
-    const bookCards = document.querySelectorAll('[data-bookcard]');
-
-    bookCards.forEach(bookCard => {
-        const title = bookCard.querySelector('h1')?.textContent.toLowerCase() || '';
-        const author = bookCard.querySelector('h3')?.textContent.toLowerCase() || '';
-
-        if (!searchTerm || title.includes(searchTerm) || author.includes(searchTerm)) {
-            bookCard.style.display = 'block';
-        } else {
-            bookCard.style.display = 'none';
-        }
-    });
-};
-
-searchInput?.addEventListener('input', applySearchFilter);
-searchButton?.addEventListener('click', applySearchFilter);
 
 // hover-to-reveal full description for each book card
 const bookCards = document.querySelectorAll('.bookcard-container');

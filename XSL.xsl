@@ -39,10 +39,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </head>
 
 <body>
-
-<xsl:template match="/bookshop">
-  <xsl:for-each select="category/book">
-  <h2>Available Books</h2>
+ <h2>Available Books</h2>
 
 <table border="1">
 <tr>
@@ -52,6 +49,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <th>Price</th>
     <th>Year</th>
 </tr>
+<xsl:template match="/bookshop">
+  <xsl:for-each select="category/book">
+ 
+<xsl:if test="title and author">
 <tr>
     <td><xsl:value-of select="title"/></td>
     <td>
@@ -63,6 +64,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <td><xsl:value-of select="price"/></td>
     <td><xsl:value-of select="year"/></td>
 </tr>
+</xsl:if>
 <div class="card" data-bookcard>
           <div class="card-front">
             <img>
