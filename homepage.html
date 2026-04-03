@@ -15,9 +15,6 @@
     <!--link to XML file. which contains the data for the website-->
     <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="books.xml">
 
-    <!--link to XSL file-->
-    <link rel="stylesheet" href="XSL.xsl">
-
     <!--link to JavaScript file-->
     <script src="js/script.js" async defer></script>
 
@@ -27,7 +24,7 @@
 </head>
 
 
-<body> <!--defines the body/structure of the website-->
+<body data-homepage> <!--defines the body/structure of the website-->
    <!--Home page for Dear Guilty Reader-->
    <header>
         <!--NAVIGATION BAR-->
@@ -41,16 +38,16 @@
                 <!--navigation links-->
                     <li><a href="homepage.html">Home</a></li>
                     <li class="dropdown">
-                    <button onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">Browse</button>
+                    <a href="browsepage.html" onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">Browse</a>
                     <div id="dropdown" class="dropdown_item">
-                        <a href="#fantasy">Fantasy</a>
-                        <a href="#sci-fi">Sci-Fi</a>
-                        <a href="#romance">Romance</a>
-                        <a href="#thriller">Thriller</a>
-                        <a href="#mystery">Mystery</a>
-                        <a href="#horror">Horror</a>
-                        <a href="#childrens">Children's</a>
-                        <a href="#non-fiction">Non-fiction</a>
+                        <a href="#fantasy" onclick="filterBooks('fantasy');">Fantasy</a>
+                        <a href="#sci-fi" onclick="filterBooks('sci-fi');">Sci-Fi</a>
+                        <a href="#romance" onclick="filterBooks('romance');">Romance</a>
+                        <a href="#thriller" onclick="filterBooks('thriller');">Thriller</a>
+                        <a href="#mystery" onclick="filterBooks('mystery');">Mystery</a>
+                        <a href="#horror" onclick="filterBooks('horror');">Horror</a>
+                        <a href="#childrens" onclick="filterBooks('children');">Children</a>
+                        <a href="#non-fiction" onclick="filterBooks('non-fiction');">Non-fiction</a>
                     </div>
                     </li>
 
@@ -94,7 +91,10 @@
 
 
    <main>
-        <!--STATIC BOOK RECS - this is the book cards-->
+        
+        <div class="bookcards-container" data-bookcards-container>
+            <xsl:for-each select ="books/book"><!--for each book element in the XML file, create a book card-->
+            <!--STATIC BOOK RECS - this is the book cards-->
         <div class="container-generic">
                 <h1>Book Hover Test</h1>
                 <br>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
         </div> 
-        <xsl:for-each select ="books/book"><!--for each book element in the XML file, create a book card-->
+
             <div class="bookcard"> <!--container for book cards-->
 
                 <!--book cover ILLEGAL PATH-->
@@ -204,8 +204,10 @@
                 
                     </div>  
             </div>
+        </div>
 
-        </xsl:for-each>>
+        </xsl:for-each>
+    </div>
     <!--link to JavaScript file-->
     <script src="js/script.js" defer></script>
    </main> 

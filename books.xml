@@ -3,7 +3,7 @@
 <!DOCTYPE bookshop SYSTEM "DTD.dtd">
 <bookshop>
     <category name="scifi">
-        <book >
+        <book genre="Sci-Fi">
             <title>The Hunger Games</title>
             <author>
                 <firstname>Suzanne</firstname> 
@@ -12,13 +12,12 @@
             <ISBN>9780439023481 </ISBN>
             <price>16.50</price>
             <year>2008</year>
-            <book genre="Sci-Fi"></book>
             <details>
                 <summary>A dystopian novel about a televised fight to the death.</summary>
             </details>
         </book>
 
-        <book>
+        <book genre="Sci-Fi">
             <title>Dune</title>
             <author>
                 <firstname>Frank</firstname>
@@ -27,13 +26,12 @@
             <ISBN>9780441172719</ISBN>
             <price>25.20</price>
             <year>1965</year>
-            <book genre="Sci-Fi"></book>
             <details>
                 <summary>A science fiction epic set on the desert planet Arrakis.</summary>
             </details>
         </book> 
 
-         <book>
+         <book genre="Sci-Fi">
             <title>Neuromancer</title>
             <author>
                 <firstname>William</firstname>
@@ -42,7 +40,6 @@
             <ISBN>9780441569595</ISBN>
             <price>21.00</price>
             <year>1984</year>
-            <book genre="Sci-Fi"></book>
             <details>
                 <summary>A cyberpunk novel that coined the term "cyberspace".</summary>
             </details>
@@ -50,7 +47,7 @@
     </category>
 
     <category name="children">  
-        <book>
+        <book genre="Children">
             <title>The Gruffalo</title>
             <author>
                 <firstname>Julia</firstname> 
@@ -59,13 +56,12 @@
             <ISBN>9780142403877 </ISBN>
             <price>10.20</price>
             <year>2000</year>
-            <book genre="Children"></book>
             <details>
                 <summary>A clever mouse outwits predators in the forest.</summary>
             </details>
         </book>
 
-        <book>
+        <book genre="Children">
             <title>Where the Wild Things Are</title>
             <author>
                 <firstname>Maurice</firstname> 
@@ -74,12 +70,12 @@
             <ISBN>9780064431781</ISBN>
             <price>10.20</price>
             <year>1963</year>
-            <book genre="Children"></book>
             <details>
-            <summary>A boy named Max travels to an island of wild creatures.</summary>
+                <summary>A boy named Max travels to an island of wild creatures.</summary>
             </details>
+        </book>
 
-         <book>
+        <book genre="Children">
             <title>Olivia</title>
             <author>
                 <firstname>Ian</firstname> 
@@ -88,7 +84,6 @@
             <ISBN>9780688168583</ISBN>
             <price>12.00</price>
             <year>2000</year>
-            <book genre="Children"></book>
             <details>
                 <summary>A spirited pig named Olivia navigates childhood adventures.</summary>
             </details>
@@ -97,7 +92,7 @@
         </category>
 
     <category name="mystery">
-        <book>
+        <book genre="Mystery">
             <title>Gone Girl</title>
             <author>
                 <firstname>Gillian</firstname> 
@@ -106,14 +101,13 @@
             <ISBN>9780307588364</ISBN>
             <price>12.10</price>
             <year>2012</year>
-            <book genre="Mystery"></book>
             <details>
                 <summary>A psychological thriller about a missing wife and a suspicious husband.</summary>
             </details>
         </book>
 
-        <book >
-            <title>My Husbands Wifi</title>
+        <book genre="Mystery">
+            <title>My Husband's Wife</title>
             <author>
                 <firstname>Alice</firstname> 
                 <lastname>Feeney</lastname>
@@ -121,7 +115,6 @@
             <ISBN>9781538753952</ISBN>
             <price>14.10</price>
             <year>2026</year>
-            <book genre="Mystery"></book>
             <details>
                 <summary>A suspenseful tale of secrets and lies in a marriage.</summary>
             </details>
@@ -130,7 +123,7 @@
     </category>
 
     <category name="thriller">
-        <book>
+        <book genre="Thriller">
             <title>The Silence of the Lambs</title>
             <author>
                 <firstname>Thomase</firstname> 
@@ -139,25 +132,26 @@
             <ISBN>9781982137274</ISBN>
             <price>14.25</price>
             <year>1998</year>
-            <book genre="Thriller"></book>
             <details>
                 <summary>A young FBI trainee seeks help from a cannibalistic serial killer.</summary>
             </details>
         </book>
 
-        <book>
+        <book genre="Thriller">
             <title>The Survivor</title>
             <author>
                 <firstname>Andrew</firstname> 
                 <lastname>Raid</lastname>
             </author>
-            <ISBN></ISBN>
+            <ISBN>9780316479823</ISBN>
             <price>14.25</price>
             <year>2026</year>
-            <book genre="Thriller"></book>
+            <details>
+                <summary>A gripping thriller about survival and secrets.</summary>
+            </details>
         </book>
 
-        <book>
+        <book genre="Thriller">
             <title>Shutter Island</title>
             <author>
                 <firstname>Dennis</firstname> 
@@ -166,12 +160,14 @@
             <ISBN>9781416550602</ISBN>
             <price>14.25</price>
             <year>2003</year>
-            <book genre="Thriller"></book>
+            <details>
+                <summary>A psychological thriller set on an isolated island asylum.</summary>
+            </details>
         </book>
     </category>
 
     <category name="fantasy">
-        <book> 
+        <book genre="Fantasy">
             <title>The Night Circus</title>
             <author>
                 <firstname>Erin</firstname> 
@@ -180,10 +176,12 @@
             <ISBN>9780618743514</ISBN>
             <price>12.50</price>
             <year>2011</year>
-            <book genre="Fantasy"></book>
+            <details>
+                <summary>A magical competition between two young illusionists in a mysterious circus.</summary>
+            </details>
         </book>
 
-         <book> 
+        <book genre="Fantasy">
             <title>Alice's Adventure in Wonderland</title>
             <author>
                 <firstname>Lewis</firstname> 
@@ -192,13 +190,12 @@
             <ISBN>9781603190241</ISBN>
             <price>10.50</price>
             <year>1865</year>
-            <book genre="Fantasy"></book>
             <details>
                 <summary>A young girl falls down a rabbit hole into a whimsical world.</summary>
             </details>
         </book>
 
-        <book> 
+        <book genre="Fantasy">
             <title>Harry Potter and the Sorcerer's Stone</title>
             <author>
                 <firstname>J.K.</firstname> 
@@ -207,10 +204,12 @@
             <ISBN>9780590353427</ISBN>
             <price>12.50</price>
             <year>1997</year>
-            <book genre="Fantasy"></book>
+            <details>
+                <summary>A young wizard discovers his magical heritage and attends Hogwarts School.</summary>
+            </details>
         </book>
 
-        <book> 
+        <book genre="Fantasy">
             <title>The Hobbit</title>
             <author>
                 <firstname>J.R.R.</firstname> 
@@ -219,23 +218,28 @@
             <ISBN>9780547928227</ISBN>
             <price>14.50</price>
             <year>1937</year>
-            <book genre="Fantasy"></book>
+            <details>
+                <summary>A hobbit embarks on an unexpected journey with dwarves to reclaim treasure.</summary>
+            </details>
         </book>
     </category>
 
     <category name="romance">
-        <book>
+        <book genre="Romance">
             <title>The Fault in Our Stars</title>
             <author>
                 <firstname>John</firstname> 
                 <lastname>Green</lastname>
             </author>
+            <ISBN>9780525478812</ISBN>
             <price>15.10</price>
             <year>2012</year>
-            <book genre="Romance"></book>
+            <details>
+                <summary>Two teenagers with cancer fall in love and embark on a journey to Amsterdam.</summary>
+            </details>
         </book>
 
-        <book> 
+        <book genre="Romance">
             <title>The Hating Game</title>
             <author>
                 <firstname>Sally</firstname> 
@@ -244,11 +248,13 @@
             <ISBN>9781713566511</ISBN>
             <price>15.55</price>
             <year>2016</year>
-            <book genre="Romance"></book>
+            <details>
+                <summary>Two office rivals engage in a battle of wills that turns into romance.</summary>
+            </details>
         </book>
 
-        <book> 
-            <title>Red, White & Royal Blue</title>
+        <book genre="Romance">
+            <title>Red, White &amp; Royal Blue</title>
             <author>
                 <firstname>Casey</firstname> 
                 <lastname>McQuiston</lastname>
@@ -256,25 +262,29 @@
             <ISBN>9781250311203</ISBN>
             <price>15.55</price>
             <year>2019</year>
-            <book genre="Romance"></book>
+            <details>
+                <summary>The First Son of the United States falls in love with a British prince.</summary>
+            </details>
         </book>
     
     </category>
 
     <category name="non-fiction">
-        <book>
+        <book genre="Non-Fiction">
             <title>The Power of Habit</title>
             <author>
                 <firstname>Charles</firstname> 
                 <lastname>Duhigg</lastname>
             </author>
-            <author>Charles Duhigg</author>
+            <ISBN>9780812981605</ISBN>
             <price>14.25</price>
             <year>2012</year>
-           <book genre="Non-Fiction"></book>
+            <details>
+                <summary>Why We Do What We Do in Life and Business.</summary>
+            </details>
         </book>
 
-        <book> 
+        <book genre="Non-Fiction">
             <title>The Diary of a Young Girl</title>
             <author>
                 <firstname>Anne</firstname> 
@@ -283,10 +293,12 @@
             <ISBN>9780140366286</ISBN>
             <price>25.20</price>
             <year>1947</year>
-            <book genre="Non-Fiction"></book>
+            <details>
+                <summary>The diary of a Jewish girl hiding from the Nazis during World War II.</summary>
+            </details>
         </book>
 
-        <book> 
+        <book genre="Non-Fiction">
             <title>Educated</title>
             <author>
                 <firstname>Tara</firstname> 
@@ -295,7 +307,9 @@
             <ISBN>9780399590504</ISBN>
             <price>18.00</price>
             <year>2018</year>
-            <book genre="Non-Fiction"></book>
+            <details>
+                <summary>A memoir about a woman who grows up in a survivalist family and pursues education.</summary>
+            </details>
         </book>
     </category>
 </bookshop>

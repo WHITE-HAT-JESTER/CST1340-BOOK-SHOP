@@ -4,12 +4,14 @@
 <!ATTLIST category name CDATA #REQUIRED>
 <!ATTLIST book genre CDATA #REQUIRED>
 
-<!ELEMENT book (title, author, ISBN, price, year)>
+<!ELEMENT book (title, author, ISBN, price, year, details?)>
 
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (firstname, lastname)>
-<!ELEMENT firstname(#PCDATA)>
-<!ELEMENT lastname(#PCDATA)>
-<!ELEMENT ISBN(#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
+<!ELEMENT details (summary)>
+<!ELEMENT summary (#PCDATA)>
