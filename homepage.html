@@ -16,7 +16,7 @@
     <link rel="alternate" type="application/rss+xml" title="DEAR GUILTY READER" href="books.xml">
 
     <!--link to JavaScript file-->
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.js" async="false"></script>
 
     <!--link to DTD-->
     <link rel="DTD" href="DTD.dtd">
@@ -186,14 +186,6 @@
                 <div class="book-cover">
                     <img src="{cover}" alt="{title} cover" class="book-cover"><br>
                     <!--use the cover element from the XML file as the source for the image and the title element as the alt text-->
-                    <!--reaction bar-->
-                    <div class="reactions">
-                        <button onclick="like-button">❤️</button>
-                        <button onclick="meh-button">➖</button>
-                        <button onclick="notforme-button">💔</button>
-                    </div>
-                </div><br><br>
-
                     
                     <!--pop-up for full description-->
                     <div class="full-description">
@@ -216,7 +208,7 @@
         </xsl:for-each>
     </div>
     <!--link to JavaScript file-->
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" async="false"></script>
    </main> 
    
    <footer>
