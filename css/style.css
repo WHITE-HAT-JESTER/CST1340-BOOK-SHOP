@@ -399,19 +399,3 @@ footer a:link{
     padding: 20px;
 }
 
-.book-tag {
-    text-align: center;
-    margin-top: 10px;
-    width: 200px;
-}
-
-.book-tag h2 {
-    font-size: 1.2em;
-    margin: 5px 0;
-}
-
-.book-tag h3 {
-    font-size: 1em;
-    color: var(--text-secondary);
-    margin: 5px 0;
-}
