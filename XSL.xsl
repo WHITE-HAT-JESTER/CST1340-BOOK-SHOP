@@ -26,6 +26,7 @@
 <xsl:if test="title and author">
 <tr>
     <td><xsl:value-of select="title"/></td>
+    <td><p><xsl:value-of select="description"/></p></td>
     <td>
         <xsl:value-of select="author/firstname"/>
         <xsl:text> </xsl:text>
@@ -34,6 +35,7 @@
     <td><xsl:value-of select="parent::category/@name"/></td>
     <td><xsl:value-of select="price"/></td>
     <td><xsl:value-of select="year"/></td>
+
 </tr>
 </xsl:if>
 <div class="card" data-bookcard>
@@ -49,9 +51,10 @@
             <h1><xsl:value-of select="title"/></h1>
             <h3><xsl:value-of select="concat(author/firstname, ' ', author/lastname)"/></h3>
             <h5>$<xsl:value-of select="price"/></h5>
-            <p><xsl:value-of select="details/summary"/></p>
+            <p><xsl:value-of select="description"/></p>
           </div>
         </div>
+      
 </xsl:for-each>
 
 </table>
