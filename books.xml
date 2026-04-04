@@ -1,241 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookshop SYSTEM "books.dtd">
-<?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL.xsl"?>
+<?xml-stylesheet type="text/xsl" href="XSL.xsl"?>
+<!DOCTYPE bookshop SYSTEM "DTD.dtd">
 
 <bookshop>
-   <category name="scifi">
-        <book>
-            <bookcover url="https://stateofmind13.com/wp-content/uploads/2012/02/the-hunger-games-book-cover.jpg"/>
-            <title  >The Hunger Games</title>
-            <description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
+
+    <category name="scifi">
+        <book genre="scifi">
+            <title>The Hunger Games</title>
             <author>
-                <firstname>Suzanne</firstname> 
+                <firstname>Suzanne</firstname>
                 <lastname>Collins</lastname>
             </author>
-            <ISBN>9780439023481 </ISBN>
+            <ISBN>9780439023481</ISBN>
             <price>16.50</price>
             <year>2008</year>
+            <description>Dystopian survival story.</description>
+            <bookcover>images/hunger-games.jpg</bookcover>
         </book>
 
-        <book>
-            <bookcover url="https://static.wixstatic.com/media/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg/v1/fill/w_188,h_284,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg"/>
+        <book genre="scifi">
             <title>Dune</title>
-            <description>On a desert planet, Paul Atreides navigates through politics, ecology and mysticism to become a rebellion leader.</description>
             <author>
                 <firstname>Frank</firstname>
                 <lastname>Herbert</lastname>
-            </author> 
+            </author>
             <ISBN>9780441172719</ISBN>
             <price>25.20</price>
             <year>1965</year>
-        </book> 
+            <description>Epic desert planet politics and mysticism.</description>
+            <bookcover>images/dune.jpg</bookcover>
+        </book>
 
-        <book>
-            <bookcover url="https://cdn.dc5.ro/img-prod/2007693969-1.jpeg"/>
+        <book genre="scifi">
             <title>Neuromancer</title>
-            <description>Geralt River, a monster hunter,navigating through a medevil fantasy world filled with politics and danger.</description>
             <author>
                 <firstname>William</firstname>
                 <lastname>Gibson</lastname>
-            </author> 
+            </author>
             <ISBN>9780441569595</ISBN>
             <price>21.00</price>
             <year>1984</year>
-        </book> 
+            <description>Cyberpunk classic in a futuristic world.</description>
+            <bookcover>images/neuromancer.jpg</bookcover>
+        </book>
     </category>
 
-    <category name="children">  
-        <book>
-            <bookcover url="https://c7.alamy.com/comp/2DBK1FJ/the-gruffalo-by-julia-donaldson-and-axel-scheffler-childrens-picture-book-2DBK1FJ.jpg"/>
+    <category name="children">
+        <book genre="children">
             <title>The Gruffalo</title>
-            <description>The gruffalo is a fearsome creature creaed by a mouse to save itself from creature in the woods but encounters a suprise.</description>
             <author>
-                <firstname>Julia</firstname> 
+                <firstname>Julia</firstname>
                 <lastname>Donaldson</lastname>
             </author>
-            <ISBN>9780142403877 </ISBN>
+            <ISBN>9780142403877</ISBN>
             <price>10.20</price>
             <year>2000</year>
+            <description>A clever mouse outsmarts forest creatures.</description>
+            <bookcover>images/gruffalo.jpg</bookcover>
         </book>
 
-        <book>
-            <bookcover url="https://www.fictiondb.com/coversth/th_0689829531.jpg"/>
+        <book genre="children">
             <title>Olivia</title>
-            <description>A herioc and mischiveous piglet named Olivia who does things her own way.</description>
             <author>
-                <firstname>Ian</firstname> 
+                <firstname>Ian</firstname>
                 <lastname>Falconer</lastname>
             </author>
             <ISBN>9780688168583</ISBN>
             <price>12.00</price>
             <year>2000</year>
+            <description>Mischievous piglet named Olivia.</description>
+            <bookcover>images/olivia.jpg</bookcover>
         </book>
     </category>
 
     <category name="thriller">
-        <book>
-            <bookcover url="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08125029341869.55eebb25e5ed5.jpg"/>
+        <book genre="thriller">
             <title>Gone Girl</title>
-            <description>A twisted thriller of a marriage that turns out to be a deadly game of cat and mouse.</description>
             <author>
-                <firstname>Gillian</firstname> 
+                <firstname>Gillian</firstname>
                 <lastname>Flynn</lastname>
             </author>
             <ISBN>9780307588364</ISBN>
             <price>12.10</price>
             <year>2012</year>
+            <description>Marriage turns into a deadly game.</description>
+            <bookcover>images/gone-girl.jpg</bookcover>
         </book>
 
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/41rIlFGkRDL._SY445_SX342_FMwebp_.jpg"/>
-            <title>My Husbands Wife</title>
-            <description>Psychological thriller about a women waking up from a cooma to find her husband's new marriage to her sister is a shocking twist to her quest of truth and identity.</description>
+        <book genre="thriller">
+            <title>My Husband's Wife</title>
             <author>
-                <firstname>Alice</firstname> 
+                <firstname>Alice</firstname>
                 <lastname>Feeney</lastname>
             </author>
             <ISBN>9781538753952</ISBN>
             <price>14.10</price>
             <year>2026</year>
+            <description>Waking from coma, finds shocking truth.</description>
+            <bookcover>images/my-husbands-wife.jpg</bookcover>
         </book>
     </category>
 
     <category name="mystery">
-        <book> 
-            <bookcover url="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982150341/devil-in-a-blue-dress-30th-anniversary-edition-9781982150341_lg.jpg"/>
-            <title>Devil in a Blue Dress</title>
-            <description>Easy Rawlins, a black World War Two vet searches for a missing white woman in 1948LA, navigating racism and corruption</description>
+        <book genre="mystery">
+            <title>The Cute Couple</title>
             <author>
-                <firstname>Walter</firstname> 
-                <lastname>Mosley</lastname>
+                <firstname>Alex</firstname>
+                <lastname>Michaelides</lastname>
             </author>
-            <ISBN>9781982150341</ISBN>
+            <ISBN>9780425284683</ISBN>
             <price>16.20</price>
-            <year>1990</year>
+            <year>2023</year>
+            <description>Journalist investigates murder at retreat.</description>
+            <bookcover>images/the-cute-couple.jpg</bookcover>
         </book>
 
-       <book>
-            <bookcover url="https://m.media-amazon.com/images/I/514E477GU1L.jpg"/>
+        <book genre="mystery">
             <title>And Then There Were None</title>
-            <description>Ten strangers are invited to an isolated island, only to be killed off one by one.</description>
             <author>
-                <firstname>Agatha</firstname> 
+                <firstname>Agatha</firstname>
                 <lastname>Christie</lastname>
             </author>
             <ISBN>9781443435134</ISBN>
             <price>20.00</price>
             <year>1939</year>
+            <description>Strangers invited to isolated island are killed one by one.</description>
+            <bookcover>images/and-then-there-were-none.jpg</bookcover>
         </book>
     </category>
 
     <category name="horror">
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/41igFYPUV9L._SY445_SX342_QL70_FMwebp_.jpg"/>
+        <book genre="horror">
             <title>The Haunting Hill House</title>
-            <description>A group explores a mansion with a history of supernatural events. </description>
             <author>
-                <firstname>Shirley</firstname> 
+                <firstname>Shirley</firstname>
                 <lastname>Jackson</lastname>
             </author>
             <ISBN>9780451524938</ISBN>
             <price>15.20</price>
             <year>1959</year>
+            <description>Group explores a haunted mansion.</description>
+            <bookcover>images/haunting-hill-house.jpg</bookcover>
         </book>
 
-       <book>
-            <bookcover url="https://m.media-amazon.com/images/I/513x+J9aAHL._SY300_SX300_QL70_FMwebp_.jpg"/>
+        <book genre="horror">
             <title>The Shining</title>
-            <description>A family gets trapped in a haunted hotel with terrifying consequences.</description>
             <author>
-                <firstname>Stephen</firstname> 
+                <firstname>Stephen</firstname>
                 <lastname>King</lastname>
             </author>
             <ISBN>9780307743653</ISBN>
             <price>16.20</price>
             <year>1977</year>
+            <description>Family trapped in haunted hotel.</description>
+            <bookcover>images/the-shining.jpg</bookcover>
         </book>
     </category>
 
-    <category name="fanatasy">
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/51iML7T0PvL._SY300_SX300_QL70_FMwebp_.jpg"/> 
+    <category name="fantasy">
+        <book genre="fantasy">
             <title>The Night Circus</title>
-            <description>A mystical tale of a magical competition between two illisuions, set in a dreamlike circus that apperas at night.</description>
             <author>
-                <firstname>Erin</firstname> 
+                <firstname>Erin</firstname>
                 <lastname>Morgenstern</lastname>
             </author>
             <ISBN>9780618743514</ISBN>
             <price>12.50</price>
             <year>2011</year>
+            <description>Magical competition in a dreamlike circus.</description>
+            <bookcover>images/the-night-circus.jpg</bookcover>
         </book>
 
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/51S-ww4ET2L._SY445_SX342_FMwebp_.jpg"/> 
-            <title>Alices Adventure in Wonderland</title>
-            <description>A whimsical classic about a girl who falls down a rabbit hole into a fantastical world of strange creatures and logic-defying adventures.</description>
+        <book genre="fantasy">
+            <title>Alice's Adventure in Wonderland</title>
             <author>
-                <firstname>Lewis</firstname> 
+                <firstname>Lewis</firstname>
                 <lastname>Carroll</lastname>
             </author>
             <ISBN>9781603190241</ISBN>
             <price>10.50</price>
             <year>1865</year>
+            <description>Girl falls down rabbit hole into fantastical world.</description>
+            <bookcover>images/alices-adventure.jpg</bookcover>
         </book>
     </category>
 
     <category name="romance">
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/41YN7Ng8XYL._SY445_SX342_FMwebp_.jpg"/>
+        <book genre="romance">
             <title>The Fault in Our Stars</title>
-            <description>A heart-wrenching love story about two teens facing lifes toughest questions.</description>
             <author>
-                <firstname>John</firstname> 
+                <firstname>John</firstname>
                 <lastname>Green</lastname>
             </author>
+            <ISBN>9780142424179</ISBN>
             <price>15.10</price>
             <year>2012</year>
+            <description>Heart-wrenching love story.</description>
+            <bookcover>images/fault-in-our-stars.jpg</bookcover>
         </book>
 
-        <book> 
-            <bookcover url="https://m.media-amazon.com/images/I/71xZvembMcL._SX342_.jpg"/>
+        <book genre="romance">
             <title>The Hating Game</title>
-            <description>A witty, enemies-to-lovers rom-com about office rivals.</description>
             <author>
-                <firstname>Sally</firstname> 
+                <firstname>Sally</firstname>
                 <lastname>Thorne</lastname>
             </author>
             <ISBN>9781713566511</ISBN>
             <price>15.55</price>
             <year>2016</year>
+            <description>Enemies-to-lovers office rom-com.</description>
+            <bookcover>images/the-hating-game.jpg</bookcover>
         </book>
     </category>
 
     <category name="non-fiction">
-        <book>
-            <bookcover url="https://m.media-amazon.com/images/I/71fFIwvOipL._SX342_.jpg"/>
+        <book genre="non-fiction">
             <title>The Power of Habit</title>
-            <description>A non-fiction bestseller exploring how habits shape our lives and how we can change them.</description>
             <author>
-                <firstname>Charles</firstname> 
+                <firstname>Charles</firstname>
                 <lastname>Duhigg</lastname>
             </author>
-            <author>Charles Duhigg</author>
+            <ISBN>9780812981605</ISBN>
             <price>14.25</price>
             <year>2012</year>
+            <description>How habits shape our lives.</description>
+            <bookcover>images/power-of-habit.jpg</bookcover>
         </book>
 
-        <book> 
-            <bookcover url="https://m.media-amazon.com/images/I/51FeSmUzbRL._SY300_SX300_QL70_FMwebp_.jpg"/>
+        <book genre="non-fiction">
             <title>The Diary of a Young Girl</title>
-            <description>A powerful true account of aa young girls's experience during World War Two offering hope and insight.</description>
             <author>
-                <firstname>Anne</firstname> 
+                <firstname>Anne</firstname>
                 <lastname>Frank</lastname>
             </author>
             <ISBN>9780140366286</ISBN>
             <price>25.20</price>
             <year>1947</year>
+            <description>Diary of Anne Frank during WWII.</description>
+            <bookcover>images/diary-of-anne-frank.jpg</bookcover>
         </book>
     </category>
+
 </bookshop>
