@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEAR GUILTY READER</title>
 
-    <!--links to css files-->
+    <!--links to css files and custom font-->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
@@ -22,13 +22,31 @@
     <!--link to DTD-->
     <link rel="DTD" href="DTD.dtd">
 
+    <!--embedded style sheet-->
+    <style>
+        *{
+            margin: 2px 2px 2px 2px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        body{
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .card-back h1{
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 <body data-homepage> <!--defines the body/structure of the website-->
    <!--Home page for Dear Guilty Reader-->
    <header>
         <!--NAVIGATION BAR-->
         <nav class="navbar">
+            <!--bunny logo on right of navbar-->
            <div class = "logo">
+            <!--custom svgs which have removed original inkmaster clutter-->
                 <svg version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path d="m11.142 1.064a2.3708 2.588 0 0 0-2.3708 2.5885v6.3576l-5.2648-2.431v17.628l12.498 5.7742v-5.89l-1.1021 0.87052-0.20362-0.55563 0.95388-0.75477-0.80571-0.65753 0.20828-0.55104 0.94925 0.78256v-10.872l-2.4912-1.153v-8.5479a2.3708 2.588 0 0 0-2.3708-2.5885zm9.7286 0a2.3708 2.588 0 0 0-2.3708 2.5885v8.5479l-2.4912 1.153v10.872l0.94925-0.78256 0.20828 0.55104-0.80569 0.65753 0.95387 0.75477-0.20366 0.55563-1.1021-0.87052v5.89l12.498-5.7742v-17.628l-5.2648 2.431v-6.3576a2.3708 2.588 0 0 0-2.3708-2.5885zm-9.4323 17.855c0.65494 0 1.1857 0.54326 1.1854 1.2132 3.27e-4 0.66993-0.53048 1.2132-1.1854 1.2132-0.65493 0-1.1857-0.54326-1.1854-1.2132-3.3e-4 -0.6699 0.53048-1.2132 1.1854-1.2132zm9.136 0c0.65493 0 1.1858 0.54326 1.1854 1.2132 3.47e-4 0.66993-0.53047 1.2132-1.1854 1.2132-0.65493 0-1.1857-0.54326-1.1854-1.2132-3.27e-4 -0.6699 0.53048-1.2132 1.1854-1.2132z" fill="#1a1a1a" stroke-width="2.3707"/>
                 </svg>
@@ -39,7 +57,7 @@
                 <li> <a href="books.xml">Books</a></li>
             </ul>
             <div class = "navbar_buttons">
-                <div class="theme-toggle">
+                <div class="theme-toggle"> <!--toggles theme to light/dark-->
                     <button id="theme">
                         <!--moon icon - dark mode-->
                         <svg version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -55,134 +73,138 @@
         </nav>
         <div class = "main-header">
             <h1> DEAR GUILTY READER</h1>
-            <h2>Your next guilty pleasure awaits.</h2>
+            <h2> Your next guilty pleasure awaits.</h2>
         </div>
    </header>
-
+   <br>
    <main>
+    <!--card flip section for our top genres-->
         <div class="container-generic">
-            <h1>Book Hover Test</h1>
+            <h1 style="text-align: center;">Our Top Genres</h1>
             <br>
             <div class="recommendations">
-                <div class="staff-block">
-                    <div class="card">
-                        <div class="card-front">
-                            <img src="images/horrorcover.png" alt="Horror Book Cover">
-                        </div>
-                        <div class="card-back">
-                            <h1>BOOK TITLE</h1>
-                            <p>Author Name | Genre
-                                description 
-                            </p>
-                        </div>
+                <!--card for horror book-->
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/horrorcover.png" alt="Horror Book Cover">
                     </div>
-                    <p>test text</p>
+                    <div class="card-back">
+                        <h1>Horror</h1>
+                        <p>Looking for <em>disturbing? Frightening?</em> Utterly <em>horrifying?</em> Explore the supernatural or psychological horror with
+                            our monstrous collection of horror literature!
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="staff-block">
-                    <div class="card">
-                        <div class="card-front">
-                            <img src="images/fantasycover.png" alt="Horror Book Cover">
-                        </div>
-                        <div class="card-back">
-                            <h1>BOOK TITLE</h1>
-                            <p>Author Name | Genre
-                                description 
-                            </p>
-                        </div>
+                <!--card for fantasy book-->
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/fantasycover.png" alt="Fantasy Book Cover">
                     </div>
-                    <p>test text</p>
+                    <div class="card-back">
+                        <h1>Fantasy</h1>
+                        <p>Explore fantasy worlds from all kinds of mythology, folklore and legends! Our endless choice of fantasy books will keep you yearning for more.
+                        </p>
+                    </div>
                 </div>
-                <div class="staff-block">
-                    <div class="card">
-                        <div class="card-front">
-                            <img src="images/scificover.png" alt="Horror Book Cover">
-                        </div>
-                        <div class="card-back">
-                            <h1>BOOK TITLE</h1>
-                            <p>Author Name | Genre
-                                description 
-                            </p>
-                        </div>
+                <!--card for scifi book-->
+                <div class="card">
+                    <div class="card-front">
+                        <img src="images/scificover.png" alt="Scifi Book Cover">
                     </div>
-                    <p>test text</p>
+                    <div class="card-back">
+                        <h1>Sci-Fi</h1>
+                        <p>Blast off with our out-of-this-world variety of Sci-Fi books. From Dune to Neuromancer, our books will prepare you for liftoff!
+                        </p>
+                    </div>
                 </div>
-                <div class="staff-block">
-                    <div class="card">
-                        <div class="card-front">
-                                <img src="images/romancecover.png" alt="Horror Book Cover">
-                        </div>
-                        <div class="card-back">
-                            <h1>BOOK TITLE</h1>
-                            <p>Author Name | Genre
-                                description 
-                            </p>
-                        </div>
+                <!--card for romance book-->
+                <div class="card">
+                    <div class="card-front">
+                            <img src="images/romancecover.png" alt="Romance Book Cover">
                     </div>
-                    <p>test text</p>
+                    <div class="card-back">
+                        <h1>Romance</h1>
+                        <p>Love is in the air with our collection that causes blushes and giggling. Choose your choice of happily-ever-afters or steamy tension.
+                        </p>
+                    </div>
                 </div>
-                <div class="staff-block">
-                    <div class="card">
-                        <div class="card-front">
-                                <img src="images/thrillercover.png" alt="Horror Book Cover">
-                        </div>
-                        <div class="card-back">
-                            <h1>BOOK TITLE</h1>
-                            <p>Author Name | Genre
-                                description description
-                            </p>
-                        </div>
+                <!--card for thriller book-->
+                <div class="card">
+                    <div class="card-front">
+                            <img src="images/thrillercover.png" alt="Thriller Book Cover">
                     </div>
-                    <p>test text</p>
+                    <div class="card-back">
+                        <h1>Thriller</h1>
+                        <p>The clock is ticking with our mystery books that are flying off the shelves. From mind-bending plot twists to pounding suspense,
+                            our choices will keep you up at night!
+                        </p>
+                    </div>
+                </div>
+                <!--card for mystery book-->
+                <div class="card">
+                    <div class="card-front">
+                            <img src="images/mysterycover.png" alt="mystery Book Cover">
+                    </div>
+                    <div class="card-back">
+                        <h1>Mystery</h1>
+                        <p>Try unmasking the truth in our killer selection of who-dunnits. Our complex cases and brilliant detectives are waiting for your lead.
+                        </p>
+                    </div>
                 </div>
             </div> <!--end of recommendations-->
         </div> <!--end of container-generic-->
-    
-    <!--reviews-->
+    <br>
+    <!--reviews section-->
     <div class="container-generic">
         <!--static reviews-->
         <h1 style="text-align: center;">Our Reviews</h1>
         <div class="container-reviews">
             
         <div class="review">
-            
                 <h2>Alice</h2>
-                <h3>Rating: ⭐⭐⭐⭐⭐ (5/5)</h3>
+                <h3>Rating:  ★ ★ ★ ★ ★ (5/5)</h3>
                 <p>Amazing quality!</p>
             <br>
         </div>
         <div class="review">
                 <h2>Bob</h2>
-                <h3>Rating: ⭐⭐⭐⭐ (4/5)</h3>
+                <h3>★ ★ ★ ★ ☆  (4/5)</h3>
                 <p>Great value for the price.</p>
             <br>
         </div>
         <div class="review">
                 <h2>Charlie</h2>
-                <h3>Rating: ⭐⭐⭐  (3/5)</h3>
+                <h3> ★ ★ ★ ☆ ☆  (3/5)</h3>
                 <p>easy to use.</p>
             <br>
         </div>
         <div class="review">
                 <h2>David</h2>
-                <h3>Rating: ⭐⭐⭐⭐⭐ (5/5)</h3>
+                <h3>★ ★ ★ ★ ★ (5/5)</h3>
                 <p>amazing recomendations!</p>
             <br>
         </div>
         <div class="review">
                 <h2>Eve</h2>
-                <h3>Rating: ⭐⭐   (2/5)</h3>
+                <h3>★ ★ ☆ ☆ ☆   (2/5)</h3>
                 <p>Good overall performance. But the books are not for me.</p>
         </div>
         </div> <!--end of container-reviews-->
     </div> <!--end of container generic-->
-    
+    <br>
    </main> 
    
    <footer>
+        <!--left div section containing table of opening times-->
         <div class="left">
             <h1>OPENING HOURS</h1>
-            <table class = "opening-table">
+            <table>
+                <thead>
+                    <tr>
+                    <th>DAY</th>
+                    <th>HOURS</th>
+                    </tr>
+                </thead>
             <tr>
                 <td>MONDAY</td>
                 <td>9:00 - 18:00</td>
@@ -215,6 +237,7 @@
             <p> Closed on <em><a href="https://publicholidays.mu/" style="color: var(--text-tertiary); text-decoration: underline;">public holidays</a></em>.</p>
         </div>
 
+        <!--right div section which contains the about us and contact us, both formatted to middle and right due to spacing-->
         <div class="right">
             <h1>ABOUT US</h1>
             <p>Discover a world of literature and adventure with us. We offer a wide range of genres and authors to suit every taste. Whether you're into fantasies, tear jerkers, mysteries or facts over fiction, we have something for everyone!

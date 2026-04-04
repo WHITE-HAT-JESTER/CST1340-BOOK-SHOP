@@ -15,8 +15,8 @@
 
 /*DECLARATION OF COLOURS FOR DARK MODE*/
 .darkmode{
-    --bg-primary: #1e2327;
-    --bg-secondary: #2d313b;
+    --bg-primary: #2d313b;
+    --bg-secondary: #1e1f27;
     --text-primary: #cacbcf;
     --text-secondary:#abafb3;
     --accent-primary:#A33434;
@@ -26,10 +26,7 @@
     --text-primary-blur: 32,35,42;
 }
 
-*{
-    margin: 2px 2px 2px 2px;
-    font-family: 'JetBrains Mono', monospace;
-}
+
 body{
     background-color: var(--bg-secondary);
     color: var(--text-primary);
@@ -310,12 +307,10 @@ button:hover{
     height: 320px;
     transform-style: preserve-3d;
     transition: transform 1s;
-    
 }
 
 .card:hover{
     transform: rotateY(-180deg) translateY(-10px);
-    box-shadow: 0 0 6px var(--text-primary);
     border-radius: 10px;
 }
 
@@ -350,17 +345,21 @@ button:hover{
 
 .card-back{
     border: 1px solid var(--text-primary);
-    background-color: var(--bg-secondary);
-    transform: rotateY(-180deg)
+    background-color: var(--text-primary);
+    transform: rotateY(-180deg);
+    text-align: center;
+    color: var(--bg-primary);
+    
 }
 
-.card-back h1{
-    text-align: center;
+.card-back p{
+    padding: 10% 2% 10% 2%;
 }
 
 /* FOOTER STYLING*/
 footer{
-    background-color: var(--bg-primary);
+    background-color: var(--text-primary);
+    color:var(--bg-primary);
     text-align: center;
     padding: 20px 0 20px 0;
     display: flex;
@@ -380,8 +379,7 @@ footer .right{
     float:right;
     width: 50%;
 }
-.opening-table {
-    border: 1px solid var(--text-secondary);
+table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -389,11 +387,11 @@ footer .right{
     width: 75%;
 }
 
-.opening-table tr {
-    border: 1px solid var(--text-primary);
+table tr {
+    border: 1px solid var(--bg-primary);
 }
 
-.opening-table tr:hover{
+table tr:hover{
     background-color:var(--accent-primary);
     color: var(--bg-secondary);
     transition: all 0.2s ease-in-out;
@@ -401,21 +399,24 @@ footer .right{
     transform: scale(1.1);
 }
 
-.opening-table tr:hover td{
+table tr:hover td{
     color:var(--bg-secondary);
     
 }
 
-.opening-table td {
-    color: var(--text-secondary)
+table td {
+    color: var(--bg-primary)
 }
 
+footer{
+    margin: 0;
+}
 footer > h1{
     color: var(--text-secondary);
 }
 
 footer a:link{
-    color: var(--text-primary);
+    color: var(--bg-primary);
 }
 .copyright{
     color: var(--text_tertiary);
