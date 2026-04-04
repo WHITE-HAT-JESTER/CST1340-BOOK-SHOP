@@ -279,10 +279,12 @@ button:hover{
 
 .review{
     flex: 1;
-    margin: 0px 10px;
+    margin: 0px 10px 0 10px;
     border-radius: 10px;
     border: 0px solid var(--text-primary);
     text-align: center;
+    
+    
 }
 
 .review:hover{
@@ -295,6 +297,24 @@ button:hover{
     transition: all 0.5s ease;
 }
 
+.review ul{
+    list-style: none;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.review ul ul{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.review ul ul ul{
+    font-size: medium;
+    font-weight: normal;
+}
 
 .recommendations{
     justify-content: space-evenly;
