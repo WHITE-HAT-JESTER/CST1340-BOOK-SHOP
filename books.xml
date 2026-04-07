@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookshop SYSTEM "books.dtd">
-<?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL.xsl"?>
+<?xml-stylesheet type="text/xsl" href="XSL.xsl"?>
 
 <bookshop><!--Root Elemnt-->
 <!--Science Ficition Books-->
@@ -128,7 +128,7 @@
 <!--Horror Books-->
 	<book category="horror">
 		<bookcover url="https://m.media-amazon.com/images/I/41igFYPUV9L._SY445_SX342_QL70_FMwebp_.jpg"/>
-		<title>The Haunting Hill House</title>
+		<title>The Haunting of Hill House</title>
 		<description>A group explores a mansion with a history of supernatural events. </description>
 		<author>
 			<firstname>Shirley</firstname> 
@@ -188,7 +188,7 @@
 			<firstname>John</firstname> 
 			<lastname>Green</lastname>
 		</author>
-		<ISBN></ISBN>
+		<ISBN>9780525478812 </ISBN>
 		<price>15.10</price>
 		<year>2012</year>
 	</book>
