@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookshop SYSTEM "books.dtd">
-<?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL.xsl"?>
+<?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL1.xsl"?>
 
 <bookshop>
 	<book category="sci-fi">
