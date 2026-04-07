@@ -102,12 +102,41 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         transition: all 0.2s ease-in-out;
         box-shadow: 0 0 6px var(--accent-glow);
         transform: scale(1.1);
+        z-index:1000;
     }
 
     table tr:hover .book-cover{
         transform: scale(2) translateX(20px);
     }
 
+   .book-row {
+        position: relative;
+    }
+
+    .hover-info {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%); /*moves to middle of screen*/
+        width: 500px;
+        pointer-events: none;
+    }
+
+    .hover-box {
+        margin-right: 10px;
+        opacity: 0;
+        background-color: var(--text-primary);
+        color: var(--bg-primary);
+        border: 1px solid var(--bg-primary);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+    }
+
+    .book-row:hover .hover-box {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
     .table-headings{
         background-color: var(--text-primary);
@@ -124,7 +153,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         color:var(--bg-primary);
         box-shadow: none;
     }
-
     
     .navbar{
         align-items: center;
@@ -272,13 +300,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     .main-header h1{
         margin-left: 10px;
-    display: inline-block;
-    overflow: hidden;
-    /*mimics the right hand side cursor for typing*/
-    border-right: 5px solid var(--text-primary);
-    white-space: nowrap;
-    animation: typing 2.8s steps(30, end) forwards;
-    font-size:40px;
+        display: inline-block;
+        overflow: hidden;
+        /*mimics the right hand side cursor for typing*/
+        border-right: 5px solid var(--text-primary);
+        white-space: nowrap;
+        animation: typing 2.8s steps(30, end) forwards;
+        font-size:40px;
     }
     /* FOOTER STYLING*/
     footer{
@@ -388,8 +416,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <h1>Available books</h1>
 </div>
 
-   <br></br>
-    <br></br>
+<br></br>
+<br></br>
 <table>
 <tr class="table-headings">
     <th>Cover</th>
@@ -401,7 +429,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </tr>
 
 <xsl:for-each select="bookshop/book">
-<tr>
+<tr class="book-row">
     <td class="book-cover">
         <img src="{bookcover/@url}" alt="Book Cover" width="60"/>
     </td>
@@ -414,6 +442,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <td style="text-transform:capitalize"><xsl:value-of select="@category"/></td>
     <td><xsl:value-of select="price"/></td>
     <td><xsl:value-of select="year"/></td>
+
+    <td class="hover-info">
+        <div class="hover-box">
+            <xsl:value-of select="description"/>
+            <br></br>
+            <div style="font-size: small; color: var(--bg-secondary);">ISBN <xsl:value-of select="ISBN"/></div>
+        </div>
+    </td>
 </tr>
 </xsl:for-each>
 
