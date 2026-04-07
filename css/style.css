@@ -253,7 +253,7 @@ button:hover{
     text-align: center;
 }
 
-
+/*scales up review and gives blurred background on hover for emphasis*/
 .review:hover{
     transform: scale(1.2);
     z-index: 1000;
@@ -376,7 +376,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-collapse: collapse;
+    border-collapse: collapse; /*shared border*/
     width: 75%;
 }
 
@@ -390,16 +390,15 @@ table tr:hover{
     color: var(--bg-secondary);
     transition: all 0.2s ease-in-out;
     box-shadow: 0 0 6px var(--accent-glow);
-    transform: scale(1.1);
+    transform: scale(1.1); /*makes table row larger for emphasis*/
 }
 
 table tr:hover td{
-    color:var(--bg-secondary);
-    
+    color:var(--bg-secondary); /*recolouring data text when background changes on hover*/
 }
 
 table td {
-    color: var(--bg-primary)
+    color: var(--bg-primary);
 }
 
 footer{

@@ -8,6 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <html>
 <head>
     <title>DEAR GUILTY READER/BOOKS</title>
+    <!--link to font, used jetbrains mono-->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap"
     rel="stylesheet"/>
     <style type="text/css">
@@ -15,6 +16,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         font-family: JetBrains Mono;
         
         }
+    <!--DECLARATION OF COLOURS FOR DARK MODE-->
     :root{
         --bg-primary: #cacbcf;
         --bg-secondary: #abafb3;
@@ -23,12 +25,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         --accent-primary:#A33434;
         --accent-glow:#be5f5f;
 
-        /* RGB FOR TRANSPARENCY*/
+        <!--  RGB FOR TRANSPARENCY -->
         --text-primary-blur: 202, 203, 207;
 
     }
 
-    /*DECLARATION OF COLOURS FOR DARK MODE*/
+    <!-- DECLARATION OF COLOURS FOR DARK MODE -->
     .darkmode{
         --bg-primary: #2d313b;
         --bg-secondary: #1e1f27;
@@ -37,7 +39,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         --accent-primary:#A33434;
         --accent-glow:#be5f5f;
 
-        /* RGB FOR TRANSPARENCY*/
+        <!-- RGB FOR TRANSPARENCY -->
         --text-primary-blur: 32,35,42;
     }   
 
@@ -50,18 +52,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         background-color: var(--bg-secondary); 
         color: var(--text-primary);
     }
-    /* KEYFRAMES FOR GENERAL BLINK ANIMATION*/
+    <!-- KEYFRAMES FOR GENERAL BLINK ANIMATION -->
     @keyframes blink{
         50% {opacity: 1;} 
         0%, 100% {opacity: 0;}
     }
 
-    /*KEYFRAMES FOR TYPING ANIMATION*/
+    <!-- KEYFRAMES FOR TYPING ANIMATION -->
     @keyframes typing{
         from {width:0} to {width:40ch; border-right: none;};
     }
 
-    /*KEYFRAMES FOR SLOGAN APPEARANCE TYPING*/
+    <!-- KEYFRAMES FOR SLOGAN APPEARANCE TYPING -->
     @keyframes slogan{
         0%
         {
@@ -76,25 +78,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             opacity: 1;
         }
     }
+
+    <!--table for books xml-->
     table{
         background-color:var(--bg-primary);
         text-align:center;
         border-collapse:collapse;
         width:90%;
         margin: 0px auto;
-        border-radius:10px;
     }
 
     table tr {
         border: 1px solid var(--text-secondary);
-        border-radius:10px;
         font-size: large;
         font-weight:bold;
     }
 
-    table td{
-        border-radius:10px;
-    }
 
     table tr:hover{
         background-color:var(--accent-primary);
@@ -109,22 +108,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         transform: scale(2) translateX(20px);
     }
 
-   .book-row {
-        position: relative;
-    }
-
+    <!-- centres description and isbn in middle of row -->
     .hover-info {
         position: absolute;
         left: 50%;
         top: 100%;
-        transform: translateX(-50%); /*moves to middle of screen*/
+        transform: translateX(-50%); <!--moves to middle of screen-->
         width: 500px;
-        pointer-events: none;
+        pointer-events: none; <!--ignores click events-->
     }
 
     .hover-box {
         margin-right: 10px;
-        opacity: 0;
+        opacity: 0; <!--hides in table-->
         background-color: var(--text-primary);
         color: var(--bg-primary);
         border: 1px solid var(--bg-primary);
@@ -133,11 +129,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         transition: 0.5s ease;
     }
 
-    .book-row:hover .hover-box {
-        opacity: 1;
+    tr:hover .hover-box {
+        opacity: 1; <!--shows element on hover-->
         transform: translateX(0);
     }
 
+    <!--disables styling for header of book table-->
     .table-headings{
         background-color: var(--text-primary);
         transform: none;
@@ -153,6 +150,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         color:var(--bg-primary);
         box-shadow: none;
     }
+
+    <!--navigation bar styling-->
     
     .navbar{
         align-items: center;
@@ -168,7 +167,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         text-transform: uppercase;
     }
 
-    /* creates separation between items and centres on page */
+    <!-- creates separation between items and centres on page -->
     .nav-links{
         display: flex;
         gap: 100px;
@@ -181,7 +180,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         text-align: center;
     }
 
-    /* colours the referenced links and shapes them */
+    <!-- colours the referenced links and shapes them  -->
     .nav-links a{
         color: var(--text-primary);
         display: inline-block;
@@ -192,7 +191,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         text-align: center;
     }
 
-    /* creates an invisible shape on the link before hover */
+    <!-- creates an invisible shape on the link before hover -->
     .nav-links a::before{
         content: "";
         position: absolute;
@@ -200,7 +199,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         background-color: var(--text-primary);
         z-index: -1;
 
-        /* polygon to create a trapezoid hover */
+         <!-- polygon to create a trapezoid hover  -->
         clip-path: polygon(
             10% 100%,
             90% 100%,
@@ -212,7 +211,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
     .nav-links a:hover::before{
-        /* enables trapezoid to be seen on hover */
+        <!-- enables trapezoid to be seen on hover  -->
         opacity: 1; 
     }
     .nav-links a:hover{
@@ -220,7 +219,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         
     }
 
-    /* LOGO STYLING */
+    <!-- LOGO STYLING  -->
 
     .logo{
         height: 32px;
@@ -229,13 +228,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         justify-content: center;
     }
 
-    /*SVG will be filled depending on theme colours*/
+    <!-- SVG will be filled depending on theme colours -->
     .logo svg path{
         fill: var(--text-primary);
 
     }
 
-    /*BUTTON STYLING - theme switcher*/
+    <!-- BUTTON STYLING - theme switcher -->
     button {
         margin-right: 10px;
         position: relative;
@@ -271,12 +270,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         fill: var(--bg-primary);
     }
 
-    /*last svg child is the sun svg - hidden when in light mode*/
+    <!-- last svg child is the sun svg - hidden when in light mode -->
     #theme svg:last-child{
         display: none;
     }
 
-    /*hides the moon icon when darkmode class is added from js and displays the sun icon instead*/
+    <!-- hides the moon icon when darkmode class is added from js and displays the sun icon instead -->
     .darkmode #theme svg:first-child{
         display: none;
     }
@@ -302,13 +301,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         margin-left: 10px;
         display: inline-block;
         overflow: hidden;
-        /*mimics the right hand side cursor for typing*/
+        <!-- mimics the right hand side cursor for typing -->
         border-right: 5px solid var(--text-primary);
         white-space: nowrap;
         animation: typing 2.8s steps(30, end) forwards;
         font-size:40px;
     }
-    /* FOOTER STYLING*/
+    <!-- FOOTER STYLING -->
     footer{
         background-color: var(--text-primary);
         color:var(--bg-primary);
@@ -319,7 +318,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         overflow: hidden;
     }
 
-    /* styling to separate footer into 2 separate columns*/
+    <!-- styling to separate footer into 2 separate columns -->
     footer .left{
         text-align: center;
         float: left;
@@ -331,7 +330,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         float:right;
         width: 50%;
     }
-    /*TABLE STYLING*/
+    <!-- TABLE STYLING -->
     .footer-table {
         background-color: var(--text-primary);
         color: var(--bg-primary);
@@ -346,7 +345,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         border: 1px solid var(--bg-primary);
     }
 
-    /*transforms table so that rows are emphasized on hover*/
+    <!-- transforms table so that rows are emphasized on hover -->
     .footer-table tr:hover{
         background-color:var(--accent-primary);
         color: var(--bg-secondary);
@@ -418,6 +417,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <br></br>
 <br></br>
+<!--table containing all books taken from xml file-->
 <table>
 <tr class="table-headings">
     <th>Cover</th>
@@ -429,20 +429,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </tr>
 
 <xsl:for-each select="bookshop/book">
-<tr class="book-row">
+<tr>
+    <!--Book cover display which calls URL attribute-->
     <td class="book-cover">
         <img src="{bookcover/@url}" alt="Book Cover" width="60"/>
     </td>
+    <!--Display of title for books-->
     <td><xsl:value-of select="title"/></td>
+    <!--Display of author details-->
     <td>
         <xsl:value-of select="author/firstname"/>
-        <xsl:text> </xsl:text>
+        <xsl:text> </xsl:text> <!--small gap between first and last name-->
         <xsl:value-of select="author/lastname"/>
     </td>
+    <!--Display of category attribute, price, year-->
     <td style="text-transform:capitalize"><xsl:value-of select="@category"/></td>
     <td><xsl:value-of select="price"/></td>
     <td><xsl:value-of select="year"/></td>
 
+    <!--hidden hover container to display description and isbns-->
     <td class="hover-info">
         <div class="hover-box">
             <xsl:value-of select="description"/>
@@ -457,7 +462,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <br/>
 <footer>
-        <!--left div section containing table of opening times-->
+        <!--left div section containing table of opening times taken from homepage-->
         <div class="left">
             <h1>OPENING HOURS</h1>
             <table class="footer-table">
@@ -516,7 +521,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         
         
    </footer>
-
+<!--link to javacript file-->
 <script src="js/script.js"></script>
 </body>
 </html>
