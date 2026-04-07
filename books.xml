@@ -2,12 +2,13 @@
 <!DOCTYPE bookshop SYSTEM "books.dtd">
 <?xml-stylesheet type="text/xsl" text="DEAR GUILTY READER" href="XSL.xsl"?>
 
-<bookshop>
-	<book category="sci-fi">
+<bookshop><!--Root Elemnt-->
+<!--Science Ficition Books-->
+	<book category="sci-fi"><!--category is an attribute for book-->
 		<bookcover url="https://stateofmind13.com/wp-content/uploads/2012/02/the-hunger-games-book-cover.jpg"/>
 		<title  >The Hunger Games</title>
 		<description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
-		<author>
+		<author><!--Author is a container element that has firstname and lastname as data elements-->
 			<firstname>Suzanne</firstname> 
 			<lastname>Collins</lastname>
 		</author>
@@ -17,6 +18,7 @@
 	</book>
 
 	<book category="sci-fi">
+		<!--bookcover is an element that has an atrribute called url that stores the link of the image-->
 		<bookcover url="https://static.wixstatic.com/media/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg/v1/fill/w_188,h_284,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg"/>
 		<title>Dune</title>
 		<description>On a desert planet, Paul Atreides navigates through politics, ecology and mysticism to become a rebellion leader.</description>
@@ -42,6 +44,7 @@
 		<year>1984</year>
 	</book> 
 
+<!--Childrens Books-->
 	<book category="children">
 		<bookcover url="https://c7.alamy.com/comp/2DBK1FJ/the-gruffalo-by-julia-donaldson-and-axel-scheffler-childrens-picture-book-2DBK1FJ.jpg"/>
 		<title>The Gruffalo</title>
@@ -67,7 +70,8 @@
 		<price>12.00</price>
 		<year>2000</year>
 	</book>
-    
+
+<!--Thriller Books-->
 	<book category="thriller">
 		<bookcover url="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08125029341869.55eebb25e5ed5.jpg"/>
 		<title>Gone Girl</title>
@@ -94,6 +98,7 @@
 		<year>2026</year>
 	</book>
     
+<!--Mystery Books-->
 	<book category="mystery"> 
 		<bookcover url="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982150341/devil-in-a-blue-dress-30th-anniversary-edition-9781982150341_lg.jpg"/>
 		<title>Devil in a Blue Dress</title>
@@ -120,6 +125,7 @@
 		<year>1939</year>
 	</book>
 
+<!--Horror Books-->
 	<book category="horror">
 		<bookcover url="https://m.media-amazon.com/images/I/41igFYPUV9L._SY445_SX342_QL70_FMwebp_.jpg"/>
 		<title>The Haunting Hill House</title>
@@ -146,6 +152,7 @@
 		<year>1977</year>
 	</book>
 
+<!--Fantasy Books-->
 	<book category="fantasy">
 		<bookcover url="https://m.media-amazon.com/images/I/51iML7T0PvL._SY300_SX300_QL70_FMwebp_.jpg"/> 
 		<title>The Night Circus</title>
@@ -172,6 +179,7 @@
 		<year>1865</year>
 	</book>
 
+<!--Romance Books-->
 	<book category="romance">
 		<bookcover url="https://m.media-amazon.com/images/I/41YN7Ng8XYL._SY445_SX342_FMwebp_.jpg"/>
 		<title>The Fault in Our Stars</title>
@@ -180,6 +188,7 @@
 			<firstname>John</firstname> 
 			<lastname>Green</lastname>
 		</author>
+		<ISBN></ISBN>
 		<price>15.10</price>
 		<year>2012</year>
 	</book>
@@ -197,6 +206,7 @@
 		<year>2016</year>
 	</book>
 
+<!--Non-Ficition Books-->
 	<book category="non-fiction">
 		<bookcover url="https://m.media-amazon.com/images/I/71fFIwvOipL._SX342_.jpg"/>
 		<title>The Power of Habit</title>
@@ -205,7 +215,7 @@
 			<firstname>Charles</firstname> 
 			<lastname>Duhigg</lastname>
 		</author>
-		<author>Charles Duhigg</author>
+		<ISBN>9780812981605</ISBN>
 		<price>14.25</price>
 		<year>2012</year>
 	</book>
