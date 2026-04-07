@@ -7,7 +7,7 @@
 	<book category="sci-fi"><!--category is an attribute for book-->
 		<bookcover url="https://stateofmind13.com/wp-content/uploads/2012/02/the-hunger-games-book-cover.jpg"/>
 		<title  >The Hunger Games</title>
-		<description>In a dystopian future, Katniss Everdeen volunteers for a deadly bunger games to save her siser in turn creating a rebellion againt the opposing goverment</description>
+		<description>In a dystopian future, Katniss Everdeen volunteers for a deadly hunger games to save her sister in turn creating a rebellion against the opposing goverment</description>
 		<author><!--Author is a container element that has firstname and lastname as data elements-->
 			<firstname>Suzanne</firstname> 
 			<lastname>Collins</lastname>
